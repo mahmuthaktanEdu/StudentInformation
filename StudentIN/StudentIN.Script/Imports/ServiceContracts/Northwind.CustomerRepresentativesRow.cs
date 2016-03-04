@@ -12,26 +12,21 @@ namespace StudentIN.Northwind
     [Imported, Serializable, PreserveMemberCase]
     public partial class CustomerRepresentativesRow
     {
-        [InlineConstant]
-        public const string IdProperty = "RepresentativeId";
-        [InlineConstant]
-        public const string LocalTextPrefix = "CustomerRepresentatives";
-
+        [InlineConstant] public const string IdProperty = "RepresentativeId";
+        [InlineConstant] public const string LocalTextPrefix = "CustomerRepresentatives";
+    
         public Int32? RepresentativeId { get; set; }
         public Int32? CustomerId { get; set; }
         public Int32? EmployeeId { get; set; }
-
+    
         [Imported, PreserveMemberCase]
         public static class Fields
         {
-            [InlineConstant]
-            public const string RepresentativeId = "RepresentativeId";
-            [InlineConstant]
-            public const string CustomerId = "CustomerId";
-            [InlineConstant]
-            public const string EmployeeId = "EmployeeId";
+            [InlineConstant] public const string RepresentativeId = "RepresentativeId";
+            [InlineConstant] public const string CustomerId = "CustomerId";
+            [InlineConstant] public const string EmployeeId = "EmployeeId";
         }
     }
-
+    
 }
 

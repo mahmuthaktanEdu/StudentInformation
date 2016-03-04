@@ -12,10 +12,10 @@ namespace StudentIN.GeneralDefinitions
     public partial class SchoolGroupForm : PrefixedContext
     {
         [InlineConstant] public const string FormKey = "GeneralDefinitions.SchoolGroup";
-
+    
         public SchoolGroupForm(string idPrefix) : base(idPrefix) {}
-
-
+    
         public StringEditor Name { get { return ById<StringEditor>("Name"); } }
     }
 }
+

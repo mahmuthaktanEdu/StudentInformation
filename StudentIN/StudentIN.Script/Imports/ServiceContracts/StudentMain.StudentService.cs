@@ -1,5 +1,4 @@
-﻿
-namespace StudentIN.StudentMain
+﻿namespace StudentIN.StudentMain
 {
     using jQueryApi;
     using Serenity;
@@ -12,37 +11,37 @@ namespace StudentIN.StudentMain
     public partial class StudentService
     {
         [InlineConstant] public const string BaseUrl = "StudentMain/Student";
-
+    
         [InlineCode("Q.serviceRequest('StudentMain/Student/Create', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Create(SaveRequest<StudentRow> request, Action<SaveResponse> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [InlineCode("Q.serviceRequest('StudentMain/Student/Update', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Update(SaveRequest<StudentRow> request, Action<SaveResponse> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
- 
+    
         [InlineCode("Q.serviceRequest('StudentMain/Student/Delete', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Delete(DeleteRequest request, Action<DeleteResponse> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [InlineCode("Q.serviceRequest('StudentMain/Student/Retrieve', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Retrieve(RetrieveRequest request, Action<RetrieveResponse<StudentRow>> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [InlineCode("Q.serviceRequest('StudentMain/Student/List', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest List(ListRequest request, Action<ListResponse<StudentRow>> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [Imported, PreserveMemberCase]
         public static class Methods
         {
@@ -53,4 +52,6 @@ namespace StudentIN.StudentMain
             [InlineConstant] public const string List = "StudentMain/Student/List";
         }
     }
+    
 }
+

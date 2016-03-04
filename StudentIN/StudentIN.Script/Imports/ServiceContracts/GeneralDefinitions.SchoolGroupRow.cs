@@ -15,10 +15,10 @@ namespace StudentIN.GeneralDefinitions
         [InlineConstant] public const string IdProperty = "Id";
         [InlineConstant] public const string NameProperty = "Name";
         [InlineConstant] public const string LocalTextPrefix = "GeneralDefinitions.SchoolGroup";
-
+    
         public Int32? Id { get; set; }
         public String Name { get; set; }
-
+    
         [Imported, PreserveMemberCase]
         public static class Fields
         {
@@ -26,4 +26,6 @@ namespace StudentIN.GeneralDefinitions
             [InlineConstant] public const string Name = "Name";
         }
     }
+    
 }
+

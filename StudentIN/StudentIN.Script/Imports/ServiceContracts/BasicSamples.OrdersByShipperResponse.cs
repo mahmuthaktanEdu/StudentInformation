@@ -12,10 +12,10 @@ namespace StudentIN.BasicSamples
     [Imported, Serializable, PreserveMemberCase]
     public partial class OrdersByShipperResponse : ServiceResponse
     {
-        public List<JsDictionary<String, Object>> Values { get; set; }
+        public List<JsDictionary<String,Object>> Values { get; set; }
         public List<String> ShipperKeys { get; set; }
         public List<String> ShipperLabels { get; set; }
     }
-
+    
 }
 

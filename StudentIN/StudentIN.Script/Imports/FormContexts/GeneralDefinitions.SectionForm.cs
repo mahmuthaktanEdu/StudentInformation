@@ -12,10 +12,10 @@ namespace StudentIN.GeneralDefinitions
     public partial class SectionForm : PrefixedContext
     {
         [InlineConstant] public const string FormKey = "GeneralDefinitions.Section";
-
+    
         public SectionForm(string idPrefix) : base(idPrefix) {}
-
-
+    
         public StringEditor Name { get { return ById<StringEditor>("Name"); } }
     }
 }
+

@@ -13,6 +13,6 @@ namespace StudentIN.Administration
     public partial class UserRoleListResponse : ListResponse<Int32>
     {
     }
-
+    
 }
 

@@ -12,10 +12,10 @@ namespace StudentIN.GeneralDefinitions
     public partial class OccupationForm : PrefixedContext
     {
         [InlineConstant] public const string FormKey = "GeneralDefinitions.Occupation";
-
+    
         public OccupationForm(string idPrefix) : base(idPrefix) {}
-
-
+    
         public StringEditor Name { get { return ById<StringEditor>("Name"); } }
     }
 }
+

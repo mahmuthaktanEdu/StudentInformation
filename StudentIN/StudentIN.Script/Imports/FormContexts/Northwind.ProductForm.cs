@@ -11,11 +11,10 @@ namespace StudentIN.Northwind
 
     public partial class ProductForm : PrefixedContext
     {
-        [InlineConstant]
-        public const string FormKey = "Northwind.Product";
-
-        public ProductForm(string idPrefix) : base(idPrefix) { }
-
+        [InlineConstant] public const string FormKey = "Northwind.Product";
+    
+        public ProductForm(string idPrefix) : base(idPrefix) {}
+    
         public StringEditor ProductName { get { return ById<StringEditor>("ProductName"); } }
         public ImageUploadEditor ProductImage { get { return ById<ImageUploadEditor>("ProductImage"); } }
         public BooleanEditor Discontinued { get { return ById<BooleanEditor>("Discontinued"); } }

@@ -12,10 +12,10 @@ namespace StudentIN.GeneralDefinitions
     public partial class CityForm : PrefixedContext
     {
         [InlineConstant] public const string FormKey = "GeneralDefinitions.City";
-
+    
         public CityForm(string idPrefix) : base(idPrefix) {}
-
-
+    
         public StringEditor Name { get { return ById<StringEditor>("Name"); } }
     }
 }
+

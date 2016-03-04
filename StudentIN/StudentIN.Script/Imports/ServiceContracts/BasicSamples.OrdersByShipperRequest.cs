@@ -13,6 +13,6 @@ namespace StudentIN.BasicSamples
     public partial class OrdersByShipperRequest : ServiceRequest
     {
     }
-
+    
 }
 

@@ -8,7 +8,7 @@ namespace StudentIN.StudentMain.Forms
     using System.ComponentModel;
     using System.Collections.Generic;
     using System.IO;
-
+    using GeneralDefinitions;
     [FormScript("StudentMain.Student")]
     [BasedOnRow(typeof(Entities.StudentRow))]
     public class StudentForm
@@ -27,6 +27,7 @@ namespace StudentIN.StudentMain.Forms
         public Int32 SectionId { get; set; }
         public Int32 ClassId { get; set; }
         public Int32 SchoolId { get; set; }
+        [ConsultantEditor]
         public Int32 ConsultantIId { get; set; }
         public String PostalCode { get; set; }
         public String Phone { get; set; }

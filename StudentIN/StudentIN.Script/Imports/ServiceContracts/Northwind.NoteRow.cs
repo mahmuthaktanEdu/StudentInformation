@@ -12,13 +12,10 @@ namespace StudentIN.Northwind
     [Imported, Serializable, PreserveMemberCase]
     public partial class NoteRow
     {
-        [InlineConstant]
-        public const string IdProperty = "NoteId";
-        [InlineConstant]
-        public const string NameProperty = "EntityType";
-        [InlineConstant]
-        public const string LocalTextPrefix = "Northwind.Note";
-
+        [InlineConstant] public const string IdProperty = "NoteId";
+        [InlineConstant] public const string NameProperty = "EntityType";
+        [InlineConstant] public const string LocalTextPrefix = "Northwind.Note";
+    
         public Int64? NoteId { get; set; }
         public String EntityType { get; set; }
         public Int64? EntityId { get; set; }
@@ -26,26 +23,19 @@ namespace StudentIN.Northwind
         public Int32? InsertUserId { get; set; }
         public String InsertDate { get; set; }
         public String InsertUserDisplayName { get; set; }
-
+    
         [Imported, PreserveMemberCase]
         public static class Fields
         {
-            [InlineConstant]
-            public const string NoteId = "NoteId";
-            [InlineConstant]
-            public const string EntityType = "EntityType";
-            [InlineConstant]
-            public const string EntityId = "EntityId";
-            [InlineConstant]
-            public const string Text = "Text";
-            [InlineConstant]
-            public const string InsertUserId = "InsertUserId";
-            [InlineConstant]
-            public const string InsertDate = "InsertDate";
-            [InlineConstant]
-            public const string InsertUserDisplayName = "InsertUserDisplayName";
+            [InlineConstant] public const string NoteId = "NoteId";
+            [InlineConstant] public const string EntityType = "EntityType";
+            [InlineConstant] public const string EntityId = "EntityId";
+            [InlineConstant] public const string Text = "Text";
+            [InlineConstant] public const string InsertUserId = "InsertUserId";
+            [InlineConstant] public const string InsertDate = "InsertDate";
+            [InlineConstant] public const string InsertUserDisplayName = "InsertUserDisplayName";
         }
     }
-
+    
 }
 

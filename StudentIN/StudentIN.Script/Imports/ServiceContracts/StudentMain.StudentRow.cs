@@ -15,7 +15,7 @@ namespace StudentIN.StudentMain
         [InlineConstant] public const string IdProperty = "Id";
         [InlineConstant] public const string NameProperty = "Name";
         [InlineConstant] public const string LocalTextPrefix = "StudentMain.Student";
-
+    
         public Int32? Id { get; set; }
         public Int32? DepartmentId { get; set; }
         public Int32? No { get; set; }
@@ -84,7 +84,7 @@ namespace StudentIN.StudentMain
         public String RecordStateName { get; set; }
         public String PaymentTypeName { get; set; }
         public Decimal? PaymentTypePaymentAmount { get; set; }
-
+    
         [Imported, PreserveMemberCase]
         public static class Fields
         {
@@ -158,4 +158,6 @@ namespace StudentIN.StudentMain
             [InlineConstant] public const string PaymentTypePaymentAmount = "PaymentTypePaymentAmount";
         }
     }
+    
 }
+

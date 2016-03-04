@@ -13,6 +13,7 @@ namespace StudentIN.GeneralDefinitions.Entities
     [ConnectionKey("Default"), DisplayName("Consultant"), InstanceName("Consultant"), TwoLevelCached]
     [ReadPermission("Administration")]
     [ModifyPermission("Administration")]
+    [LookupScript("StudentIN.Consultant")]
     public sealed class ConsultantRow : Row, IIdRow, INameRow
     {
         [DisplayName("Id"), Column("ID"), Identity]

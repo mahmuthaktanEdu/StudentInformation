@@ -11,11 +11,10 @@ namespace StudentIN.Northwind
 
     public partial class TerritoryForm : PrefixedContext
     {
-        [InlineConstant]
-        public const string FormKey = "Northwind.Territory";
-
-        public TerritoryForm(string idPrefix) : base(idPrefix) { }
-
+        [InlineConstant] public const string FormKey = "Northwind.Territory";
+    
+        public TerritoryForm(string idPrefix) : base(idPrefix) {}
+    
         public StringEditor TerritoryID { get { return ById<StringEditor>("TerritoryID"); } }
         public StringEditor TerritoryDescription { get { return ById<StringEditor>("TerritoryDescription"); } }
         public LookupEditor RegionID { get { return ById<LookupEditor>("RegionID"); } }

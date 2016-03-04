@@ -11,11 +11,10 @@ namespace StudentIN.Northwind
 
     public partial class RegionForm : PrefixedContext
     {
-        [InlineConstant]
-        public const string FormKey = "Northwind.Region";
-
-        public RegionForm(string idPrefix) : base(idPrefix) { }
-
+        [InlineConstant] public const string FormKey = "Northwind.Region";
+    
+        public RegionForm(string idPrefix) : base(idPrefix) {}
+    
         public IntegerEditor RegionID { get { return ById<IntegerEditor>("RegionID"); } }
         public StringEditor RegionDescription { get { return ById<StringEditor>("RegionDescription"); } }
     }

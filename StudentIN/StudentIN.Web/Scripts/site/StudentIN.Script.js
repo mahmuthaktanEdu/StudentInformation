@@ -818,6 +818,13 @@
 	$StudentIN_GeneralDefinitions_ConsultantDialog.__typeName = 'StudentIN.GeneralDefinitions.ConsultantDialog';
 	global.StudentIN.GeneralDefinitions.ConsultantDialog = $StudentIN_GeneralDefinitions_ConsultantDialog;
 	////////////////////////////////////////////////////////////////////////////////
+	// StudentIN.GeneralDefinitions.ConsultantEditor
+	var $StudentIN_GeneralDefinitions_ConsultantEditor = function(hidden) {
+		ss.makeGenericType(Serenity.LookupEditorBase$1, [Object]).call(this, hidden);
+	};
+	$StudentIN_GeneralDefinitions_ConsultantEditor.__typeName = 'StudentIN.GeneralDefinitions.ConsultantEditor';
+	global.StudentIN.GeneralDefinitions.ConsultantEditor = $StudentIN_GeneralDefinitions_ConsultantEditor;
+	////////////////////////////////////////////////////////////////////////////////
 	// StudentIN.GeneralDefinitions.ConsultantForm
 	var $StudentIN_GeneralDefinitions_ConsultantForm = function(idPrefix) {
 		Serenity.PrefixedContext.call(this, idPrefix);
@@ -2996,6 +3003,11 @@
 	}, Serenity.PrefixedContext);
 	ss.initClass($StudentIN_GeneralDefinitions_ClassGrid, $asm, {}, ss.makeGenericType(Serenity.EntityGrid$1, [Object]), [Serenity.IDataGrid]);
 	ss.initClass($StudentIN_GeneralDefinitions_ConsultantDialog, $asm, {}, ss.makeGenericType(Serenity.EntityDialog$1, [Object]), [Serenity.IDialog, Serenity.IEditDialog]);
+	ss.initClass($StudentIN_GeneralDefinitions_ConsultantEditor, $asm, {
+		getLookupKey: function() {
+			return 'StudentIN.Consultant';
+		}
+	}, ss.makeGenericType(Serenity.LookupEditorBase$1, [Object]), [Serenity.ISetEditValue, Serenity.IGetEditValue, Serenity.IStringValue]);
 	ss.initClass($StudentIN_GeneralDefinitions_ConsultantForm, $asm, {
 		get_departmentId: function() {
 			return this.byId(Serenity.IntegerEditor).call(this, 'DepartmentId');
@@ -3837,7 +3849,7 @@
 			return this.byId(Serenity.IntegerEditor).call(this, 'SchoolId');
 		},
 		get_consultantIId: function() {
-			return this.byId(Serenity.IntegerEditor).call(this, 'ConsultantIId');
+			return this.byId($StudentIN_GeneralDefinitions_ConsultantEditor).call(this, 'ConsultantIId');
 		},
 		get_postalCode: function() {
 			return this.byId(Serenity.StringEditor).call(this, 'PostalCode');
@@ -3960,6 +3972,7 @@
 	ss.setMetadata($StudentIN_GeneralDefinitions_ClassDialog, { attr: [new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('ClassCode'), new Serenity.FormKeyAttribute('GeneralDefinitions.Class'), new Serenity.LocalTextPrefixAttribute('GeneralDefinitions.Class'), new Serenity.ServiceAttribute('GeneralDefinitions/Class')] });
 	ss.setMetadata($StudentIN_GeneralDefinitions_ClassGrid, { attr: [new Serenity.ColumnsKeyAttribute('GeneralDefinitions.Class'), new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('ClassCode'), new Serenity.DialogTypeAttribute($StudentIN_GeneralDefinitions_ClassDialog), new Serenity.LocalTextPrefixAttribute('GeneralDefinitions.Class'), new Serenity.ServiceAttribute('GeneralDefinitions/Class')] });
 	ss.setMetadata($StudentIN_GeneralDefinitions_ConsultantDialog, { attr: [new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('Name'), new Serenity.FormKeyAttribute('GeneralDefinitions.Consultant'), new Serenity.LocalTextPrefixAttribute('GeneralDefinitions.Consultant'), new Serenity.ServiceAttribute('GeneralDefinitions/Consultant')] });
+	ss.setMetadata($StudentIN_GeneralDefinitions_ConsultantEditor, { attr: [new Serenity.EditorAttribute()] });
 	ss.setMetadata($StudentIN_GeneralDefinitions_ConsultantGrid, { attr: [new Serenity.ColumnsKeyAttribute('GeneralDefinitions.Consultant'), new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('Name'), new Serenity.DialogTypeAttribute($StudentIN_GeneralDefinitions_ConsultantDialog), new Serenity.LocalTextPrefixAttribute('GeneralDefinitions.Consultant'), new Serenity.ServiceAttribute('GeneralDefinitions/Consultant')] });
 	ss.setMetadata($StudentIN_GeneralDefinitions_DepartmentDialog, { attr: [new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('Name'), new Serenity.FormKeyAttribute('GeneralDefinitions.Department'), new Serenity.LocalTextPrefixAttribute('GeneralDefinitions.Department'), new Serenity.ServiceAttribute('GeneralDefinitions/Department')] });
 	ss.setMetadata($StudentIN_GeneralDefinitions_DepartmentGrid, { attr: [new Serenity.ColumnsKeyAttribute('GeneralDefinitions.Department'), new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('Name'), new Serenity.DialogTypeAttribute($StudentIN_GeneralDefinitions_DepartmentDialog), new Serenity.LocalTextPrefixAttribute('GeneralDefinitions.Department'), new Serenity.ServiceAttribute('GeneralDefinitions/Department')] });

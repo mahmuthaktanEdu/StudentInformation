@@ -109,6 +109,65 @@ namespace MVC
             public const string ValidationError = "~/Views/Errors/ValidationError.cshtml";
         }
 
+        public static class GeneralDefinitions
+        {
+            public static class City
+            {
+                public const string CityIndex = "~/Modules/GeneralDefinitions/City/CityIndex.cshtml";
+            }
+
+            public static class Class
+            {
+                public const string ClassIndex = "~/Modules/GeneralDefinitions/Class/ClassIndex.cshtml";
+            }
+
+            public static class Consultant
+            {
+                public const string ConsultantIndex = "~/Modules/GeneralDefinitions/Consultant/ConsultantIndex.cshtml";
+            }
+
+            public static class Department
+            {
+                public const string DepartmentIndex = "~/Modules/GeneralDefinitions/Department/DepartmentIndex.cshtml";
+            }
+
+            public static class Occupation
+            {
+                public const string OccupationIndex = "~/Modules/GeneralDefinitions/Occupation/OccupationIndex.cshtml";
+            }
+
+            public static class PaymentType
+            {
+                public const string PaymentTypeIndex = "~/Modules/GeneralDefinitions/PaymentType/PaymentTypeIndex.cshtml";
+            }
+
+            public static class RecordState
+            {
+                public const string RecordStateIndex = "~/Modules/GeneralDefinitions/RecordState/RecordStateIndex.cshtml";
+            }
+
+            public static class Relative
+            {
+                public const string RelativeIndex = "~/Modules/GeneralDefinitions/Relative/RelativeIndex.cshtml";
+            }
+
+            public static class School
+            {
+                public const string SchoolIndex = "~/Modules/GeneralDefinitions/School/SchoolIndex.cshtml";
+            }
+
+            public static class SchoolGroup
+            {
+                public const string SchoolGroupIndex = "~/Modules/GeneralDefinitions/SchoolGroup/SchoolGroupIndex.cshtml";
+            }
+
+            public static class Section
+            {
+                public const string SectionIndex = "~/Modules/GeneralDefinitions/Section/SectionIndex.cshtml";
+            }
+
+        }
+
         public static class Membership
         {
             public static class Account
@@ -215,6 +274,14 @@ namespace MVC
             public const string _LayoutNoNavigation = "~/Views/Shared/_LayoutNoNavigation.cshtml";
             public const string Error = "~/Views/Shared/Error.cshtml";
             public const string LeftNavigation = "~/Views/Shared/LeftNavigation.cshtml";
+        }
+
+        public static class StudentMain
+        {
+            public static class Student
+            {
+                public const string StudentIndex = "~/Modules/StudentMain/Student/StudentIndex.cshtml";
+            }
         }
     }
 }

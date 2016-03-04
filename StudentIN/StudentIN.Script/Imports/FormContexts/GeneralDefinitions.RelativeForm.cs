@@ -12,10 +12,10 @@ namespace StudentIN.GeneralDefinitions
     public partial class RelativeForm : PrefixedContext
     {
         [InlineConstant] public const string FormKey = "GeneralDefinitions.Relative";
-
+    
         public RelativeForm(string idPrefix) : base(idPrefix) {}
-
-
+    
         public StringEditor Name { get { return ById<StringEditor>("Name"); } }
     }
 }
+

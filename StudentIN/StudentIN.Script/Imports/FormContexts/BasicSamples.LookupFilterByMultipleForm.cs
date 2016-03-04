@@ -11,11 +11,10 @@ namespace StudentIN.BasicSamples
 
     public partial class LookupFilterByMultipleForm : PrefixedContext
     {
-        [InlineConstant]
-        public const string FormKey = "BasicSamples.LookupFilterByMultiple";
-
-        public LookupFilterByMultipleForm(string idPrefix) : base(idPrefix) { }
-
+        [InlineConstant] public const string FormKey = "BasicSamples.LookupFilterByMultiple";
+    
+        public LookupFilterByMultipleForm(string idPrefix) : base(idPrefix) {}
+    
         public StringEditor ProductName { get { return ById<StringEditor>("ProductName"); } }
         public ImageUploadEditor ProductImage { get { return ById<ImageUploadEditor>("ProductImage"); } }
         public BooleanEditor Discontinued { get { return ById<BooleanEditor>("Discontinued"); } }

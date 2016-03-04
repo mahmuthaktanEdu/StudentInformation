@@ -11,11 +11,10 @@ namespace StudentIN.Membership
 
     public partial class LoginForm : PrefixedContext
     {
-        [InlineConstant]
-        public const string FormKey = "Membership.Login";
-
-        public LoginForm(string idPrefix) : base(idPrefix) { }
-
+        [InlineConstant] public const string FormKey = "Membership.Login";
+    
+        public LoginForm(string idPrefix) : base(idPrefix) {}
+    
         public StringEditor Username { get { return ById<StringEditor>("Username"); } }
         public PasswordEditor Password { get { return ById<PasswordEditor>("Password"); } }
     }

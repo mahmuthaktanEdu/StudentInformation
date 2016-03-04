@@ -1,5 +1,4 @@
-﻿
-namespace StudentIN.GeneralDefinitions
+﻿namespace StudentIN.GeneralDefinitions
 {
     using jQueryApi;
     using Serenity;
@@ -12,37 +11,37 @@ namespace StudentIN.GeneralDefinitions
     public partial class RelativeService
     {
         [InlineConstant] public const string BaseUrl = "GeneralDefinitions/Relative";
-
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/Relative/Create', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Create(SaveRequest<RelativeRow> request, Action<SaveResponse> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/Relative/Update', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Update(SaveRequest<RelativeRow> request, Action<SaveResponse> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
- 
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/Relative/Delete', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Delete(DeleteRequest request, Action<DeleteResponse> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/Relative/Retrieve', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Retrieve(RetrieveRequest request, Action<RetrieveResponse<RelativeRow>> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/Relative/List', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest List(ListRequest request, Action<ListResponse<RelativeRow>> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [Imported, PreserveMemberCase]
         public static class Methods
         {
@@ -53,4 +52,6 @@ namespace StudentIN.GeneralDefinitions
             [InlineConstant] public const string List = "GeneralDefinitions/Relative/List";
         }
     }
+    
 }
+

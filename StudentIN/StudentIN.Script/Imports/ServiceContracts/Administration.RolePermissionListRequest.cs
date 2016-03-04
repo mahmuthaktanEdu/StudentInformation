@@ -16,6 +16,6 @@ namespace StudentIN.Administration
         public String Module { get; set; }
         public String Submodule { get; set; }
     }
-
+    
 }
 

@@ -15,6 +15,6 @@ namespace StudentIN.Northwind
         NotShipped = 0,
         Shipped = 1
     }
-
+    
 }
 

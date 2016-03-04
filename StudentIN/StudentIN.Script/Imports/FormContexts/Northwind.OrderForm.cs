@@ -11,11 +11,10 @@ namespace StudentIN.Northwind
 
     public partial class OrderForm : PrefixedContext
     {
-        [InlineConstant]
-        public const string FormKey = "Northwind.Order";
-
-        public OrderForm(string idPrefix) : base(idPrefix) { }
-
+        [InlineConstant] public const string FormKey = "Northwind.Order";
+    
+        public OrderForm(string idPrefix) : base(idPrefix) {}
+    
         public CustomerEditor CustomerID { get { return ById<CustomerEditor>("CustomerID"); } }
         public DateEditor OrderDate { get { return ById<DateEditor>("OrderDate"); } }
         public DateEditor RequiredDate { get { return ById<DateEditor>("RequiredDate"); } }

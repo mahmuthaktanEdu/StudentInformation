@@ -1,5 +1,4 @@
-﻿
-namespace StudentIN.GeneralDefinitions
+﻿namespace StudentIN.GeneralDefinitions
 {
     using jQueryApi;
     using Serenity;
@@ -12,37 +11,37 @@ namespace StudentIN.GeneralDefinitions
     public partial class SchoolGroupService
     {
         [InlineConstant] public const string BaseUrl = "GeneralDefinitions/SchoolGroup";
-
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/SchoolGroup/Create', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Create(SaveRequest<SchoolGroupRow> request, Action<SaveResponse> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/SchoolGroup/Update', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Update(SaveRequest<SchoolGroupRow> request, Action<SaveResponse> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
- 
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/SchoolGroup/Delete', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Delete(DeleteRequest request, Action<DeleteResponse> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/SchoolGroup/Retrieve', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Retrieve(RetrieveRequest request, Action<RetrieveResponse<SchoolGroupRow>> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/SchoolGroup/List', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest List(ListRequest request, Action<ListResponse<SchoolGroupRow>> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [Imported, PreserveMemberCase]
         public static class Methods
         {
@@ -53,4 +52,6 @@ namespace StudentIN.GeneralDefinitions
             [InlineConstant] public const string List = "GeneralDefinitions/SchoolGroup/List";
         }
     }
+    
 }
+

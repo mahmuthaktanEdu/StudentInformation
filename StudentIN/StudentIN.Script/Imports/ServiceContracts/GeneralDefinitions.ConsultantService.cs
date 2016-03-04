@@ -1,5 +1,4 @@
-﻿
-namespace StudentIN.GeneralDefinitions
+﻿namespace StudentIN.GeneralDefinitions
 {
     using jQueryApi;
     using Serenity;
@@ -12,37 +11,37 @@ namespace StudentIN.GeneralDefinitions
     public partial class ConsultantService
     {
         [InlineConstant] public const string BaseUrl = "GeneralDefinitions/Consultant";
-
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/Consultant/Create', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Create(SaveRequest<ConsultantRow> request, Action<SaveResponse> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/Consultant/Update', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Update(SaveRequest<ConsultantRow> request, Action<SaveResponse> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
- 
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/Consultant/Delete', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Delete(DeleteRequest request, Action<DeleteResponse> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/Consultant/Retrieve', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Retrieve(RetrieveRequest request, Action<RetrieveResponse<ConsultantRow>> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/Consultant/List', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest List(ListRequest request, Action<ListResponse<ConsultantRow>> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [Imported, PreserveMemberCase]
         public static class Methods
         {
@@ -53,4 +52,6 @@ namespace StudentIN.GeneralDefinitions
             [InlineConstant] public const string List = "GeneralDefinitions/Consultant/List";
         }
     }
+    
 }
+

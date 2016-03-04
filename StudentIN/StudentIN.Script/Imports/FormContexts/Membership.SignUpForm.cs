@@ -11,11 +11,10 @@ namespace StudentIN.Membership
 
     public partial class SignUpForm : PrefixedContext
     {
-        [InlineConstant]
-        public const string FormKey = "Membership.SignUp";
-
-        public SignUpForm(string idPrefix) : base(idPrefix) { }
-
+        [InlineConstant] public const string FormKey = "Membership.SignUp";
+    
+        public SignUpForm(string idPrefix) : base(idPrefix) {}
+    
         public StringEditor DisplayName { get { return ById<StringEditor>("DisplayName"); } }
         public EmailEditor Email { get { return ById<EmailEditor>("Email"); } }
         public EmailEditor ConfirmEmail { get { return ById<EmailEditor>("ConfirmEmail"); } }

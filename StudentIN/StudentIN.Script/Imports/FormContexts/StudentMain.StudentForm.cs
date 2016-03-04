@@ -12,10 +12,9 @@ namespace StudentIN.StudentMain
     public partial class StudentForm : PrefixedContext
     {
         [InlineConstant] public const string FormKey = "StudentMain.Student";
-
+    
         public StudentForm(string idPrefix) : base(idPrefix) {}
-
-
+    
         public IntegerEditor DepartmentId { get { return ById<IntegerEditor>("DepartmentId"); } }
         public IntegerEditor No { get { return ById<IntegerEditor>("No"); } }
         public StringEditor Name { get { return ById<StringEditor>("Name"); } }
@@ -30,7 +29,7 @@ namespace StudentIN.StudentMain
         public IntegerEditor SectionId { get { return ById<IntegerEditor>("SectionId"); } }
         public IntegerEditor ClassId { get { return ById<IntegerEditor>("ClassId"); } }
         public IntegerEditor SchoolId { get { return ById<IntegerEditor>("SchoolId"); } }
-        public IntegerEditor ConsultantIId { get { return ById<IntegerEditor>("ConsultantIId"); } }
+        public GeneralDefinitions.ConsultantEditor ConsultantIId { get { return ById<GeneralDefinitions.ConsultantEditor>("ConsultantIId"); } }
         public StringEditor PostalCode { get { return ById<StringEditor>("PostalCode"); } }
         public StringEditor Phone { get { return ById<StringEditor>("Phone"); } }
         public StringEditor MobilePhone { get { return ById<StringEditor>("MobilePhone"); } }
@@ -63,3 +62,4 @@ namespace StudentIN.StudentMain
         public DateEditor LastModifiedDate { get { return ById<DateEditor>("LastModifiedDate"); } }
     }
 }
+

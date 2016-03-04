@@ -17,6 +17,6 @@ namespace StudentIN.Administration
         public String TargetText { get; set; }
         public String CustomText { get; set; }
     }
-
+    
 }
 

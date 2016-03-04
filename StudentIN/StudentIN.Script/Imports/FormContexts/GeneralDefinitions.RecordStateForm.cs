@@ -12,10 +12,10 @@ namespace StudentIN.GeneralDefinitions
     public partial class RecordStateForm : PrefixedContext
     {
         [InlineConstant] public const string FormKey = "GeneralDefinitions.RecordState";
-
+    
         public RecordStateForm(string idPrefix) : base(idPrefix) {}
-
-
+    
         public StringEditor Name { get { return ById<StringEditor>("Name"); } }
     }
 }
+

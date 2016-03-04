@@ -48,6 +48,7 @@
     <Compile Include="Common\Helper\BulkServiceAction.cs" />
     <Compile Include="Common\Helper\ReportHelper.cs" />
     <Compile Include="Common\Helper\ExcelExportHelper.cs" />
+    <Compile Include="GeneralDefinitions\Consultant\ConsultantEditor.cs" />
     <Compile Include="Imports\FormContexts\BasicSamples.LookupFilterByMultipleForm.cs">
       <DependentUpon>FormContexts.tt</DependentUpon>
     </Compile>
@@ -372,38 +373,60 @@
     <Compile Include="Administration\UserPermission\UserPermissionDialog.cs" />
     <Compile Include="Northwind\Note\NoteDialog.cs" />
     <Compile Include="BasicSamples\ViewWithoutIDGrid.cs" />
-    <Compile Include="Imports\FormContexts\GeneralDefinitions.CityForm.cs" />
+    <Compile Include="Imports\FormContexts\GeneralDefinitions.CityForm.cs">
+      <DependentUpon>FormContexts.tt</DependentUpon>
+    </Compile>
     <Compile Include="GeneralDefinitions\City\CityGrid.cs" />
     <Compile Include="GeneralDefinitions\City\CityDialog.cs" />
-    <Compile Include="Imports\FormContexts\GeneralDefinitions.ClassForm.cs" />
+    <Compile Include="Imports\FormContexts\GeneralDefinitions.ClassForm.cs">
+      <DependentUpon>FormContexts.tt</DependentUpon>
+    </Compile>
     <Compile Include="GeneralDefinitions\Class\ClassGrid.cs" />
     <Compile Include="GeneralDefinitions\Class\ClassDialog.cs" />
-    <Compile Include="Imports\FormContexts\GeneralDefinitions.ConsultantForm.cs" />
+    <Compile Include="Imports\FormContexts\GeneralDefinitions.ConsultantForm.cs">
+      <DependentUpon>FormContexts.tt</DependentUpon>
+    </Compile>
     <Compile Include="GeneralDefinitions\Consultant\ConsultantGrid.cs" />
     <Compile Include="GeneralDefinitions\Consultant\ConsultantDialog.cs" />
-    <Compile Include="Imports\FormContexts\GeneralDefinitions.DepartmentForm.cs" />
+    <Compile Include="Imports\FormContexts\GeneralDefinitions.DepartmentForm.cs">
+      <DependentUpon>FormContexts.tt</DependentUpon>
+    </Compile>
     <Compile Include="GeneralDefinitions\Department\DepartmentGrid.cs" />
     <Compile Include="GeneralDefinitions\Department\DepartmentDialog.cs" />
-    <Compile Include="Imports\FormContexts\GeneralDefinitions.OccupationForm.cs" />
+    <Compile Include="Imports\FormContexts\GeneralDefinitions.OccupationForm.cs">
+      <DependentUpon>FormContexts.tt</DependentUpon>
+    </Compile>
     <Compile Include="GeneralDefinitions\Occupation\OccupationGrid.cs" />
     <Compile Include="GeneralDefinitions\Occupation\OccupationDialog.cs" />
-    <Compile Include="Imports\FormContexts\GeneralDefinitions.PaymentTypeForm.cs" />
+    <Compile Include="Imports\FormContexts\GeneralDefinitions.PaymentTypeForm.cs">
+      <DependentUpon>FormContexts.tt</DependentUpon>
+    </Compile>
     <Compile Include="GeneralDefinitions\PaymentType\PaymentTypeGrid.cs" />
     <Compile Include="GeneralDefinitions\PaymentType\PaymentTypeDialog.cs" />
-    <Compile Include="Imports\FormContexts\GeneralDefinitions.RecordStateForm.cs" />
+    <Compile Include="Imports\FormContexts\GeneralDefinitions.RecordStateForm.cs">
+      <DependentUpon>FormContexts.tt</DependentUpon>
+    </Compile>
     <Compile Include="GeneralDefinitions\RecordState\RecordStateGrid.cs" />
     <Compile Include="GeneralDefinitions\RecordState\RecordStateDialog.cs" />
-    <Compile Include="Imports\FormContexts\GeneralDefinitions.RelativeForm.cs" />
+    <Compile Include="Imports\FormContexts\GeneralDefinitions.RelativeForm.cs">
+      <DependentUpon>FormContexts.tt</DependentUpon>
+    </Compile>
     <Compile Include="GeneralDefinitions\Relative\RelativeGrid.cs" />
     <Compile Include="GeneralDefinitions\Relative\RelativeDialog.cs" />
-    <Compile Include="Imports\FormContexts\GeneralDefinitions.SchoolGroupForm.cs" />
+    <Compile Include="Imports\FormContexts\GeneralDefinitions.SchoolGroupForm.cs">
+      <DependentUpon>FormContexts.tt</DependentUpon>
+    </Compile>
     <Compile Include="GeneralDefinitions\SchoolGroup\SchoolGroupGrid.cs" />
     <Compile Include="GeneralDefinitions\SchoolGroup\SchoolGroupDialog.cs" />
     <Compile Include="Imports\FormContexts\SchoolForm.cs" />
-    <Compile Include="Imports\FormContexts\GeneralDefinitions.SectionForm.cs" />
+    <Compile Include="Imports\FormContexts\GeneralDefinitions.SectionForm.cs">
+      <DependentUpon>FormContexts.tt</DependentUpon>
+    </Compile>
     <Compile Include="GeneralDefinitions\Section\SectionGrid.cs" />
     <Compile Include="GeneralDefinitions\Section\SectionDialog.cs" />
-    <Compile Include="Imports\FormContexts\StudentMain.StudentForm.cs" />
+    <Compile Include="Imports\FormContexts\StudentMain.StudentForm.cs">
+      <DependentUpon>FormContexts.tt</DependentUpon>
+    </Compile>
     <Compile Include="StudentMain\Student\StudentGrid.cs" />
     <Compile Include="StudentMain\Student\StudentDialog.cs" />
   </ItemGroup>
@@ -503,16 +526,18 @@
     <Compile Include="Imports\ServiceContracts\GeneralDefinitions.SchoolGroupService.cs">
       <DependentUpon>ServiceContracts.tt</DependentUpon>
     </Compile>
-    <Compile Include="Imports\ServiceContracts\SchoolRow.cs">
+    <Compile Include="Imports\ServiceContracts\GeneralDefinitions.SectionRow.cs">
       <DependentUpon>ServiceContracts.tt</DependentUpon>
     </Compile>
-    <Compile Include="Imports\ServiceContracts\SchoolService.cs">
+    <Compile Include="Imports\ServiceContracts\GeneralDefinitions.SectionService.cs">
       <DependentUpon>ServiceContracts.tt</DependentUpon>
     </Compile>
-    <Compile Include="Imports\ServiceContracts\GeneralDefinitions.SectionRow.cs">  <DependentUpon>ServiceContracts.tt</DependentUpon></Compile>
-    <Compile Include="Imports\ServiceContracts\GeneralDefinitions.SectionService.cs">  <DependentUpon>ServiceContracts.tt</DependentUpon></Compile>
-    <Compile Include="Imports\ServiceContracts\StudentMain.StudentRow.cs">  <DependentUpon>ServiceContracts.tt</DependentUpon></Compile>
-    <Compile Include="Imports\ServiceContracts\StudentMain.StudentService.cs">  <DependentUpon>ServiceContracts.tt</DependentUpon></Compile>
+    <Compile Include="Imports\ServiceContracts\StudentMain.StudentRow.cs">
+      <DependentUpon>ServiceContracts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Imports\ServiceContracts\StudentMain.StudentService.cs">
+      <DependentUpon>ServiceContracts.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

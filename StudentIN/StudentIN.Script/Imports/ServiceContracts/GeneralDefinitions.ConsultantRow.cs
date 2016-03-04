@@ -15,11 +15,14 @@ namespace StudentIN.GeneralDefinitions
         [InlineConstant] public const string IdProperty = "Id";
         [InlineConstant] public const string NameProperty = "Name";
         [InlineConstant] public const string LocalTextPrefix = "GeneralDefinitions.Consultant";
-
+        [InlineConstant] public const string LookupKey = "StudentIN.Consultant";
+    
+        public static Lookup<ConsultantRow> Lookup { [InlineCode("Q.getLookup('StudentIN.Consultant')")] get { return null; } }
+    
         public Int32? Id { get; set; }
         public Int32? DepartmentId { get; set; }
         public String Name { get; set; }
-
+    
         [Imported, PreserveMemberCase]
         public static class Fields
         {
@@ -28,4 +31,6 @@ namespace StudentIN.GeneralDefinitions
             [InlineConstant] public const string Name = "Name";
         }
     }
+    
 }
+

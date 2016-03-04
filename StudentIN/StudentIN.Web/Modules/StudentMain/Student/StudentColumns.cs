@@ -30,7 +30,7 @@ namespace StudentIN.StudentMain.Columns
         public Int32 SectionId { get; set; }
         public Int32 ClassId { get; set; }
         public Int32 SchoolId { get; set; }
-        public Int32 ConsultantIId { get; set; }
+        public String ConsultantIName { get; set; }
         public String PostalCode { get; set; }
         public String Phone { get; set; }
         public String MobilePhone { get; set; }

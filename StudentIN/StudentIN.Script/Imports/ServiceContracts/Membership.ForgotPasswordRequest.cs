@@ -14,6 +14,6 @@ namespace StudentIN.Membership
     {
         public String Email { get; set; }
     }
-
+    
 }
 

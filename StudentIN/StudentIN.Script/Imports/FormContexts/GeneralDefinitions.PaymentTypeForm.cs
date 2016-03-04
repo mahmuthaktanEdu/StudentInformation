@@ -12,11 +12,11 @@ namespace StudentIN.GeneralDefinitions
     public partial class PaymentTypeForm : PrefixedContext
     {
         [InlineConstant] public const string FormKey = "GeneralDefinitions.PaymentType";
-
+    
         public PaymentTypeForm(string idPrefix) : base(idPrefix) {}
-
-
+    
         public StringEditor Name { get { return ById<StringEditor>("Name"); } }
         public DecimalEditor PaymentAmount { get { return ById<DecimalEditor>("PaymentAmount"); } }
     }
 }
+

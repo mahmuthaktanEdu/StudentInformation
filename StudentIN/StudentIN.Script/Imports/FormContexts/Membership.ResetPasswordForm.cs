@@ -11,11 +11,10 @@ namespace StudentIN.Membership
 
     public partial class ResetPasswordForm : PrefixedContext
     {
-        [InlineConstant]
-        public const string FormKey = "Membership.ResetPassword";
-
-        public ResetPasswordForm(string idPrefix) : base(idPrefix) { }
-
+        [InlineConstant] public const string FormKey = "Membership.ResetPassword";
+    
+        public ResetPasswordForm(string idPrefix) : base(idPrefix) {}
+    
         public PasswordEditor NewPassword { get { return ById<PasswordEditor>("NewPassword"); } }
         public PasswordEditor ConfirmPassword { get { return ById<PasswordEditor>("ConfirmPassword"); } }
     }
