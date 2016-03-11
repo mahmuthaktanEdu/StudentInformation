@@ -278,9 +278,29 @@ namespace MVC
 
         public static class StudentMain
         {
+            public static class InvoiceInformation
+            {
+                public const string InvoiceInformationIndex = "~/Modules/StudentMain/InvoiceInformation/InvoiceInformationIndex.cshtml";
+            }
+
+            public static class Payment
+            {
+                public const string PaymentIndex = "~/Modules/StudentMain/Payment/PaymentIndex.cshtml";
+            }
+
+            public static class PaymentInstallment
+            {
+                public const string PaymentInstallmentIndex = "~/Modules/StudentMain/PaymentInstallment/PaymentInstallmentIndex.cshtml";
+            }
+
             public static class Student
             {
                 public const string StudentIndex = "~/Modules/StudentMain/Student/StudentIndex.cshtml";
+            }
+
+            public static class StudentDiscount
+            {
+                public const string StudentDiscountIndex = "~/Modules/StudentMain/StudentDiscount/StudentDiscountIndex.cshtml";
             }
         }
     }

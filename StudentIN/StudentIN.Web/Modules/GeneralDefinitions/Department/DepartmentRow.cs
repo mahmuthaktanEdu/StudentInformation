@@ -13,6 +13,8 @@ namespace StudentIN.GeneralDefinitions.Entities
     [ConnectionKey("Default"), DisplayName("Department"), InstanceName("Department"), TwoLevelCached]
     [ReadPermission("Administration")]
     [ModifyPermission("Administration")]
+    [LookupScript("StudentIN.Department")]
+
     public sealed class DepartmentRow : Row, IIdRow, INameRow
     {
         [DisplayName("Id"), Column("ID"), Identity]

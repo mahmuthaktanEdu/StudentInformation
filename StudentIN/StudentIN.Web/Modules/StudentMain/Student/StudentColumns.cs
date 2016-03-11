@@ -15,7 +15,7 @@ namespace StudentIN.StudentMain.Columns
     {
         [EditLink, DisplayName("Db.Shared.RecordId"), AlignRight]
         public Int32 Id { get; set; }
-        public Int32 DepartmentId { get; set; }
+        public String DepartmentName { get; set; }
         public Int32 No { get; set; }
         [EditLink]
         public String Name { get; set; }
@@ -24,23 +24,28 @@ namespace StudentIN.StudentMain.Columns
         public DateTime PreEnrollmentDate { get; set; }
         public DateTime EnrollmentDate { get; set; }
         public String IdentityNumber { get; set; }
+
+        public String RecordStateName { get; set; }
+        public String PaymentTypeName { get; set; }
+        public String ConsultantIName { get; set; }
+
+        public String SectionName { get; set; }
+        public String ClassName { get; set; }
+        public String SchoolName { get; set; }
+        public String MobilePhone { get; set; }
         public Int32 GroupPhoto { get; set; }
         public Boolean Photo { get; set; }
         public Boolean Graduated { get; set; }
-        public Int32 SectionId { get; set; }
-        public Int32 ClassId { get; set; }
-        public Int32 SchoolId { get; set; }
-        public String ConsultantIName { get; set; }
+        
         public String PostalCode { get; set; }
         public String Phone { get; set; }
-        public String MobilePhone { get; set; }
         public String EMail { get; set; }
         public String Address { get; set; }
-        public Int32 CityId { get; set; }
+        public String CityName { get; set; }
         public String ParentName { get; set; }
         public String ParentSurname { get; set; }
         public Int32 ParentOccupationId { get; set; }
-        public Int32 RelativeId { get; set; }
+        public String RelativeName { get; set; }
         public String ParentMobile { get; set; }
         public String ParentPhone { get; set; }
         public String ParentHomeAddress { get; set; }
@@ -53,8 +58,6 @@ namespace StudentIN.StudentMain.Columns
         public String ParentIdentityNumber { get; set; }
         public Boolean IsRecorded { get; set; }
         public DateTime RecordCancelDate { get; set; }
-        public Int32 RecordStateId { get; set; }
-        public Int32 PaymentTypeId { get; set; }
         public Int32 DiscountUserId { get; set; }
         public String DiscountDescription { get; set; }
         public String CreatedBy { get; set; }

@@ -15,6 +15,9 @@ namespace StudentIN.GeneralDefinitions
         [InlineConstant] public const string IdProperty = "Id";
         [InlineConstant] public const string NameProperty = "Name";
         [InlineConstant] public const string LocalTextPrefix = "GeneralDefinitions.Occupation";
+        [InlineConstant] public const string LookupKey = "StudentIN.Occupation";
+    
+        public static Lookup<OccupationRow> Lookup { [InlineCode("Q.getLookup('StudentIN.Occupation')")] get { return null; } }
     
         public Int32? Id { get; set; }
         public String Name { get; set; }

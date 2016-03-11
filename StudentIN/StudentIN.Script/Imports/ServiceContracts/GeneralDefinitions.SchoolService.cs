@@ -1,5 +1,4 @@
-﻿
-namespace StudentIN.GeneralDefinitions
+﻿namespace StudentIN.GeneralDefinitions
 {
     using jQueryApi;
     using Serenity;
@@ -12,37 +11,37 @@ namespace StudentIN.GeneralDefinitions
     public partial class SchoolService
     {
         [InlineConstant] public const string BaseUrl = "GeneralDefinitions/School";
-
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/School/Create', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Create(SaveRequest<SchoolRow> request, Action<SaveResponse> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/School/Update', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Update(SaveRequest<SchoolRow> request, Action<SaveResponse> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
- 
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/School/Delete', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Delete(DeleteRequest request, Action<DeleteResponse> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/School/Retrieve', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest Retrieve(RetrieveRequest request, Action<RetrieveResponse<SchoolRow>> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [InlineCode("Q.serviceRequest('GeneralDefinitions/School/List', {request}, {onSuccess}, {options})")]
         public static jQueryXmlHttpRequest List(ListRequest request, Action<ListResponse<SchoolRow>> onSuccess, ServiceCallOptions options = null)
         {
             return null;
         }
-
+    
         [Imported, PreserveMemberCase]
         public static class Methods
         {
@@ -53,4 +52,6 @@ namespace StudentIN.GeneralDefinitions
             [InlineConstant] public const string List = "GeneralDefinitions/School/List";
         }
     }
+    
 }
+

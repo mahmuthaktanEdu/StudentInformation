@@ -48,7 +48,17 @@
     <Compile Include="Common\Helper\BulkServiceAction.cs" />
     <Compile Include="Common\Helper\ReportHelper.cs" />
     <Compile Include="Common\Helper\ExcelExportHelper.cs" />
+    <Compile Include="GeneralDefinitions\City\CityEditor.cs" />
+    <Compile Include="GeneralDefinitions\Class\ClassEditor.cs" />
     <Compile Include="GeneralDefinitions\Consultant\ConsultantEditor.cs" />
+    <Compile Include="GeneralDefinitions\Department\DepartmentEditor.cs" />
+    <Compile Include="GeneralDefinitions\Occupation\OccupationEditor.cs" />
+    <Compile Include="GeneralDefinitions\PaymentType\PaymentTypeEditor.cs" />
+    <Compile Include="GeneralDefinitions\RecordState\RecordStateEditor.cs" />
+    <Compile Include="GeneralDefinitions\Relative\RelativeEditor.cs" />
+    <Compile Include="GeneralDefinitions\SchoolGroup\SchoolGroupEditor.cs" />
+    <Compile Include="GeneralDefinitions\School\SchoolEditor.cs" />
+    <Compile Include="GeneralDefinitions\Section\SectionEditor.cs" />
     <Compile Include="Imports\FormContexts\BasicSamples.LookupFilterByMultipleForm.cs">
       <DependentUpon>FormContexts.tt</DependentUpon>
     </Compile>
@@ -427,8 +437,37 @@
     <Compile Include="Imports\FormContexts\StudentMain.StudentForm.cs">
       <DependentUpon>FormContexts.tt</DependentUpon>
     </Compile>
+    <Compile Include="StudentMain\InvoiceInformation\SubInvoiceInformationGrid.cs" />
+    <Compile Include="StudentMain\PaymentInstallment\SubPaymentInstallmentGrid.cs" />
+    <Compile Include="StudentMain\Payment\SubPaymentGrid.cs" />
+    <Compile Include="StudentMain\StudentDiscount\SubStudentDiscountGrid.cs" />
     <Compile Include="StudentMain\Student\StudentGrid.cs" />
     <Compile Include="StudentMain\Student\StudentDialog.cs" />
+    <Compile Include="Imports\FormContexts\GeneralDefinitions.SchoolForm.cs">
+      <DependentUpon>FormContexts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralDefinitions\School\SchoolGrid.cs" />
+    <Compile Include="GeneralDefinitions\School\SchoolDialog.cs" />
+    <Compile Include="Imports\FormContexts\StudentMain.PaymentForm.cs">
+      <DependentUpon>FormContexts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMain\Payment\PaymentGrid.cs" />
+    <Compile Include="StudentMain\Payment\PaymentDialog.cs" />
+    <Compile Include="Imports\FormContexts\StudentMain.PaymentInstallmentForm.cs">
+      <DependentUpon>FormContexts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMain\PaymentInstallment\PaymentInstallmentGrid.cs" />
+    <Compile Include="StudentMain\PaymentInstallment\PaymentInstallmentDialog.cs" />
+    <Compile Include="Imports\FormContexts\StudentMain.InvoiceInformationForm.cs">
+      <DependentUpon>FormContexts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMain\InvoiceInformation\InvoiceInformationGrid.cs" />
+    <Compile Include="StudentMain\InvoiceInformation\InvoiceInformationDialog.cs" />
+    <Compile Include="Imports\FormContexts\StudentMain.StudentDiscountForm.cs">
+      <DependentUpon>FormContexts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMain\StudentDiscount\StudentDiscountGrid.cs" />
+    <Compile Include="StudentMain\StudentDiscount\StudentDiscountDialog.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Imports\FormContexts\FormContexts.log">
@@ -536,6 +575,36 @@
       <DependentUpon>ServiceContracts.tt</DependentUpon>
     </Compile>
     <Compile Include="Imports\ServiceContracts\StudentMain.StudentService.cs">
+      <DependentUpon>ServiceContracts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Imports\ServiceContracts\GeneralDefinitions.SchoolRow.cs">
+      <DependentUpon>ServiceContracts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Imports\ServiceContracts\GeneralDefinitions.SchoolService.cs">
+      <DependentUpon>ServiceContracts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Imports\ServiceContracts\StudentMain.PaymentRow.cs">
+      <DependentUpon>ServiceContracts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Imports\ServiceContracts\StudentMain.PaymentService.cs">
+      <DependentUpon>ServiceContracts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Imports\ServiceContracts\StudentMain.PaymentInstallmentRow.cs">
+      <DependentUpon>ServiceContracts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Imports\ServiceContracts\StudentMain.PaymentInstallmentService.cs">
+      <DependentUpon>ServiceContracts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Imports\ServiceContracts\StudentMain.InvoiceInformationRow.cs">
+      <DependentUpon>ServiceContracts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Imports\ServiceContracts\StudentMain.InvoiceInformationService.cs">
+      <DependentUpon>ServiceContracts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Imports\ServiceContracts\StudentMain.StudentDiscountRow.cs">
+      <DependentUpon>ServiceContracts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Imports\ServiceContracts\StudentMain.StudentDiscountService.cs">
       <DependentUpon>ServiceContracts.tt</DependentUpon>
     </Compile>
   </ItemGroup>

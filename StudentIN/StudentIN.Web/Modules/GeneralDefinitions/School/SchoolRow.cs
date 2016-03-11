@@ -13,6 +13,8 @@ namespace StudentIN.GeneralDefinitions.Entities
     [ConnectionKey("Default"), DisplayName("School"), InstanceName("School"), TwoLevelCached]
     [ReadPermission("Administration")]
     [ModifyPermission("Administration")]
+    [LookupScript("StudentIN.School")]
+
     public sealed class SchoolRow : Row, IIdRow, INameRow
     {
         [DisplayName("Id"), Column("ID"), Identity]
@@ -29,19 +31,21 @@ namespace StudentIN.GeneralDefinitions.Entities
             set { Fields.DepartmentId[this] = value; }
         }
 
-        [DisplayName("Code"), Column("code"), Size(50), QuickSearch]
+        [DisplayName("Name"), Size(50), QuickSearch]
+        public String Name
+        {
+            get { return Fields.Name[this]; }
+            set { Fields.Name[this] = value; }
+        }
+
+        [DisplayName("Code"), Column("code"), Size(50)]
         public String Code
         {
             get { return Fields.Code[this]; }
             set { Fields.Code[this] = value; }
         }
 
-        [DisplayName("Name"), Size(50)]
-        public String Name
-        {
-            get { return Fields.Name[this]; }
-            set { Fields.Name[this] = value; }
-        }
+
 
         [DisplayName("School Group"), ForeignKey("[dbo].[SchoolGroup]", "ID"), LeftJoin("jSchoolGroup"), TextualField("SchoolGroupName")]
         public Int32? SchoolGroupId
@@ -64,7 +68,7 @@ namespace StudentIN.GeneralDefinitions.Entities
 
         StringField INameRow.NameField
         {
-            get { return Fields.Code; }
+            get { return Fields.Name; }
         }
 
         public static readonly RowFields Fields = new RowFields().Init();

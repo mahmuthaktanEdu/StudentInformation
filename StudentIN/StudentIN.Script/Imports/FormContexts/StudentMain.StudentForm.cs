@@ -15,7 +15,7 @@ namespace StudentIN.StudentMain
     
         public StudentForm(string idPrefix) : base(idPrefix) {}
     
-        public IntegerEditor DepartmentId { get { return ById<IntegerEditor>("DepartmentId"); } }
+        public GeneralDefinitions.DepartmentEditor DepartmentId { get { return ById<GeneralDefinitions.DepartmentEditor>("DepartmentId"); } }
         public IntegerEditor No { get { return ById<IntegerEditor>("No"); } }
         public StringEditor Name { get { return ById<StringEditor>("Name"); } }
         public StringEditor Surname { get { return ById<StringEditor>("Surname"); } }
@@ -26,9 +26,9 @@ namespace StudentIN.StudentMain
         public IntegerEditor GroupPhoto { get { return ById<IntegerEditor>("GroupPhoto"); } }
         public BooleanEditor Photo { get { return ById<BooleanEditor>("Photo"); } }
         public BooleanEditor Graduated { get { return ById<BooleanEditor>("Graduated"); } }
-        public IntegerEditor SectionId { get { return ById<IntegerEditor>("SectionId"); } }
-        public IntegerEditor ClassId { get { return ById<IntegerEditor>("ClassId"); } }
-        public IntegerEditor SchoolId { get { return ById<IntegerEditor>("SchoolId"); } }
+        public GeneralDefinitions.SectionEditor SectionId { get { return ById<GeneralDefinitions.SectionEditor>("SectionId"); } }
+        public GeneralDefinitions.ClassEditor ClassId { get { return ById<GeneralDefinitions.ClassEditor>("ClassId"); } }
+        public GeneralDefinitions.SchoolEditor SchoolId { get { return ById<GeneralDefinitions.SchoolEditor>("SchoolId"); } }
         public GeneralDefinitions.ConsultantEditor ConsultantIId { get { return ById<GeneralDefinitions.ConsultantEditor>("ConsultantIId"); } }
         public StringEditor PostalCode { get { return ById<StringEditor>("PostalCode"); } }
         public StringEditor Phone { get { return ById<StringEditor>("Phone"); } }
@@ -39,7 +39,7 @@ namespace StudentIN.StudentMain
         public StringEditor ParentName { get { return ById<StringEditor>("ParentName"); } }
         public StringEditor ParentSurname { get { return ById<StringEditor>("ParentSurname"); } }
         public IntegerEditor ParentOccupationId { get { return ById<IntegerEditor>("ParentOccupationId"); } }
-        public IntegerEditor RelativeId { get { return ById<IntegerEditor>("RelativeId"); } }
+        public GeneralDefinitions.RelativeEditor RelativeId { get { return ById<GeneralDefinitions.RelativeEditor>("RelativeId"); } }
         public StringEditor ParentMobile { get { return ById<StringEditor>("ParentMobile"); } }
         public StringEditor ParentPhone { get { return ById<StringEditor>("ParentPhone"); } }
         public StringEditor ParentHomeAddress { get { return ById<StringEditor>("ParentHomeAddress"); } }
@@ -52,8 +52,8 @@ namespace StudentIN.StudentMain
         public StringEditor ParentIdentityNumber { get { return ById<StringEditor>("ParentIdentityNumber"); } }
         public BooleanEditor IsRecorded { get { return ById<BooleanEditor>("IsRecorded"); } }
         public DateEditor RecordCancelDate { get { return ById<DateEditor>("RecordCancelDate"); } }
-        public IntegerEditor RecordStateId { get { return ById<IntegerEditor>("RecordStateId"); } }
-        public IntegerEditor PaymentTypeId { get { return ById<IntegerEditor>("PaymentTypeId"); } }
+        public GeneralDefinitions.RecordStateEditor RecordStateId { get { return ById<GeneralDefinitions.RecordStateEditor>("RecordStateId"); } }
+        public GeneralDefinitions.PaymentTypeEditor PaymentTypeId { get { return ById<GeneralDefinitions.PaymentTypeEditor>("PaymentTypeId"); } }
         public IntegerEditor DiscountUserId { get { return ById<IntegerEditor>("DiscountUserId"); } }
         public StringEditor DiscountDescription { get { return ById<StringEditor>("DiscountDescription"); } }
         public StringEditor CreatedBy { get { return ById<StringEditor>("CreatedBy"); } }

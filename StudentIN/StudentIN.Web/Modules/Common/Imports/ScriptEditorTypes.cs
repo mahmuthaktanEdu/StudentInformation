@@ -85,11 +85,411 @@ namespace StudentIN.BasicSamples
 
 namespace StudentIN.GeneralDefinitions
 {
+    public partial class CityEditorAttribute : CustomEditorAttribute
+    {
+        public const string Key = "StudentIN.GeneralDefinitions.CityEditor";
+    
+        public CityEditorAttribute()
+            : base(Key)
+        {
+        }
+    
+        public String CascadeField
+        {
+            get { return GetOption<String>("cascadeField"); }
+            set { SetOption("cascadeField", value); }
+        }
+    
+        public String CascadeFrom
+        {
+            get { return GetOption<String>("cascadeFrom"); }
+            set { SetOption("cascadeFrom", value); }
+        }
+    
+        public Object CascadeValue
+        {
+            get { return GetOption<Object>("cascadeValue"); }
+            set { SetOption("cascadeValue", value); }
+        }
+    
+        public String FilterField
+        {
+            get { return GetOption<String>("filterField"); }
+            set { SetOption("filterField", value); }
+        }
+    
+        public Object FilterValue
+        {
+            get { return GetOption<Object>("filterValue"); }
+            set { SetOption("filterValue", value); }
+        }
+    }
+
+    public partial class ClassEditorAttribute : CustomEditorAttribute
+    {
+        public const string Key = "StudentIN.GeneralDefinitions.ClassEditor";
+    
+        public ClassEditorAttribute()
+            : base(Key)
+        {
+        }
+    
+        public String CascadeField
+        {
+            get { return GetOption<String>("cascadeField"); }
+            set { SetOption("cascadeField", value); }
+        }
+    
+        public String CascadeFrom
+        {
+            get { return GetOption<String>("cascadeFrom"); }
+            set { SetOption("cascadeFrom", value); }
+        }
+    
+        public Object CascadeValue
+        {
+            get { return GetOption<Object>("cascadeValue"); }
+            set { SetOption("cascadeValue", value); }
+        }
+    
+        public String FilterField
+        {
+            get { return GetOption<String>("filterField"); }
+            set { SetOption("filterField", value); }
+        }
+    
+        public Object FilterValue
+        {
+            get { return GetOption<Object>("filterValue"); }
+            set { SetOption("filterValue", value); }
+        }
+    }
+
     public partial class ConsultantEditorAttribute : CustomEditorAttribute
     {
         public const string Key = "StudentIN.GeneralDefinitions.ConsultantEditor";
     
         public ConsultantEditorAttribute()
+            : base(Key)
+        {
+        }
+    
+        public String CascadeField
+        {
+            get { return GetOption<String>("cascadeField"); }
+            set { SetOption("cascadeField", value); }
+        }
+    
+        public String CascadeFrom
+        {
+            get { return GetOption<String>("cascadeFrom"); }
+            set { SetOption("cascadeFrom", value); }
+        }
+    
+        public Object CascadeValue
+        {
+            get { return GetOption<Object>("cascadeValue"); }
+            set { SetOption("cascadeValue", value); }
+        }
+    
+        public String FilterField
+        {
+            get { return GetOption<String>("filterField"); }
+            set { SetOption("filterField", value); }
+        }
+    
+        public Object FilterValue
+        {
+            get { return GetOption<Object>("filterValue"); }
+            set { SetOption("filterValue", value); }
+        }
+    }
+
+    public partial class DepartmentEditorAttribute : CustomEditorAttribute
+    {
+        public const string Key = "StudentIN.GeneralDefinitions.DepartmentEditor";
+    
+        public DepartmentEditorAttribute()
+            : base(Key)
+        {
+        }
+    
+        public String CascadeField
+        {
+            get { return GetOption<String>("cascadeField"); }
+            set { SetOption("cascadeField", value); }
+        }
+    
+        public String CascadeFrom
+        {
+            get { return GetOption<String>("cascadeFrom"); }
+            set { SetOption("cascadeFrom", value); }
+        }
+    
+        public Object CascadeValue
+        {
+            get { return GetOption<Object>("cascadeValue"); }
+            set { SetOption("cascadeValue", value); }
+        }
+    
+        public String FilterField
+        {
+            get { return GetOption<String>("filterField"); }
+            set { SetOption("filterField", value); }
+        }
+    
+        public Object FilterValue
+        {
+            get { return GetOption<Object>("filterValue"); }
+            set { SetOption("filterValue", value); }
+        }
+    }
+
+    public partial class OccupationEditorAttribute : CustomEditorAttribute
+    {
+        public const string Key = "StudentIN.GeneralDefinitions.OccupationEditor";
+    
+        public OccupationEditorAttribute()
+            : base(Key)
+        {
+        }
+    
+        public String CascadeField
+        {
+            get { return GetOption<String>("cascadeField"); }
+            set { SetOption("cascadeField", value); }
+        }
+    
+        public String CascadeFrom
+        {
+            get { return GetOption<String>("cascadeFrom"); }
+            set { SetOption("cascadeFrom", value); }
+        }
+    
+        public Object CascadeValue
+        {
+            get { return GetOption<Object>("cascadeValue"); }
+            set { SetOption("cascadeValue", value); }
+        }
+    
+        public String FilterField
+        {
+            get { return GetOption<String>("filterField"); }
+            set { SetOption("filterField", value); }
+        }
+    
+        public Object FilterValue
+        {
+            get { return GetOption<Object>("filterValue"); }
+            set { SetOption("filterValue", value); }
+        }
+    }
+
+    public partial class PaymentTypeEditorAttribute : CustomEditorAttribute
+    {
+        public const string Key = "StudentIN.GeneralDefinitions.PaymentTypeEditor";
+    
+        public PaymentTypeEditorAttribute()
+            : base(Key)
+        {
+        }
+    
+        public String CascadeField
+        {
+            get { return GetOption<String>("cascadeField"); }
+            set { SetOption("cascadeField", value); }
+        }
+    
+        public String CascadeFrom
+        {
+            get { return GetOption<String>("cascadeFrom"); }
+            set { SetOption("cascadeFrom", value); }
+        }
+    
+        public Object CascadeValue
+        {
+            get { return GetOption<Object>("cascadeValue"); }
+            set { SetOption("cascadeValue", value); }
+        }
+    
+        public String FilterField
+        {
+            get { return GetOption<String>("filterField"); }
+            set { SetOption("filterField", value); }
+        }
+    
+        public Object FilterValue
+        {
+            get { return GetOption<Object>("filterValue"); }
+            set { SetOption("filterValue", value); }
+        }
+    }
+
+    public partial class RecordStateEditorAttribute : CustomEditorAttribute
+    {
+        public const string Key = "StudentIN.GeneralDefinitions.RecordStateEditor";
+    
+        public RecordStateEditorAttribute()
+            : base(Key)
+        {
+        }
+    
+        public String CascadeField
+        {
+            get { return GetOption<String>("cascadeField"); }
+            set { SetOption("cascadeField", value); }
+        }
+    
+        public String CascadeFrom
+        {
+            get { return GetOption<String>("cascadeFrom"); }
+            set { SetOption("cascadeFrom", value); }
+        }
+    
+        public Object CascadeValue
+        {
+            get { return GetOption<Object>("cascadeValue"); }
+            set { SetOption("cascadeValue", value); }
+        }
+    
+        public String FilterField
+        {
+            get { return GetOption<String>("filterField"); }
+            set { SetOption("filterField", value); }
+        }
+    
+        public Object FilterValue
+        {
+            get { return GetOption<Object>("filterValue"); }
+            set { SetOption("filterValue", value); }
+        }
+    }
+
+    public partial class RelativeEditorAttribute : CustomEditorAttribute
+    {
+        public const string Key = "StudentIN.GeneralDefinitions.RelativeEditor";
+    
+        public RelativeEditorAttribute()
+            : base(Key)
+        {
+        }
+    
+        public String CascadeField
+        {
+            get { return GetOption<String>("cascadeField"); }
+            set { SetOption("cascadeField", value); }
+        }
+    
+        public String CascadeFrom
+        {
+            get { return GetOption<String>("cascadeFrom"); }
+            set { SetOption("cascadeFrom", value); }
+        }
+    
+        public Object CascadeValue
+        {
+            get { return GetOption<Object>("cascadeValue"); }
+            set { SetOption("cascadeValue", value); }
+        }
+    
+        public String FilterField
+        {
+            get { return GetOption<String>("filterField"); }
+            set { SetOption("filterField", value); }
+        }
+    
+        public Object FilterValue
+        {
+            get { return GetOption<Object>("filterValue"); }
+            set { SetOption("filterValue", value); }
+        }
+    }
+
+    public partial class SchoolEditorAttribute : CustomEditorAttribute
+    {
+        public const string Key = "StudentIN.GeneralDefinitions.SchoolEditor";
+    
+        public SchoolEditorAttribute()
+            : base(Key)
+        {
+        }
+    
+        public String CascadeField
+        {
+            get { return GetOption<String>("cascadeField"); }
+            set { SetOption("cascadeField", value); }
+        }
+    
+        public String CascadeFrom
+        {
+            get { return GetOption<String>("cascadeFrom"); }
+            set { SetOption("cascadeFrom", value); }
+        }
+    
+        public Object CascadeValue
+        {
+            get { return GetOption<Object>("cascadeValue"); }
+            set { SetOption("cascadeValue", value); }
+        }
+    
+        public String FilterField
+        {
+            get { return GetOption<String>("filterField"); }
+            set { SetOption("filterField", value); }
+        }
+    
+        public Object FilterValue
+        {
+            get { return GetOption<Object>("filterValue"); }
+            set { SetOption("filterValue", value); }
+        }
+    }
+
+    public partial class SchoolGroupEditorAttribute : CustomEditorAttribute
+    {
+        public const string Key = "StudentIN.GeneralDefinitions.SchoolGroupEditor";
+    
+        public SchoolGroupEditorAttribute()
+            : base(Key)
+        {
+        }
+    
+        public String CascadeField
+        {
+            get { return GetOption<String>("cascadeField"); }
+            set { SetOption("cascadeField", value); }
+        }
+    
+        public String CascadeFrom
+        {
+            get { return GetOption<String>("cascadeFrom"); }
+            set { SetOption("cascadeFrom", value); }
+        }
+    
+        public Object CascadeValue
+        {
+            get { return GetOption<Object>("cascadeValue"); }
+            set { SetOption("cascadeValue", value); }
+        }
+    
+        public String FilterField
+        {
+            get { return GetOption<String>("filterField"); }
+            set { SetOption("filterField", value); }
+        }
+    
+        public Object FilterValue
+        {
+            get { return GetOption<Object>("filterValue"); }
+            set { SetOption("filterValue", value); }
+        }
+    }
+
+    public partial class SectionEditorAttribute : CustomEditorAttribute
+    {
+        public const string Key = "StudentIN.GeneralDefinitions.SectionEditor";
+    
+        public SectionEditorAttribute()
             : base(Key)
         {
         }
@@ -224,6 +624,29 @@ namespace StudentIN.Northwind
         {
             get { return GetOption<Boolean>("multiple"); }
             set { SetOption("multiple", value); }
+        }
+    }
+}
+
+namespace StudentIN.StudentMain
+{
+    public partial class SubPaymentGridAttribute : CustomEditorAttribute
+    {
+        public const string Key = "StudentIN.StudentMain.SubPaymentGrid";
+    
+        public SubPaymentGridAttribute()
+            : base(Key)
+        {
+        }
+    }
+
+    public partial class SubPaymentInstallmentGridAttribute : CustomEditorAttribute
+    {
+        public const string Key = "StudentIN.StudentMain.SubPaymentInstallmentGrid";
+    
+        public SubPaymentInstallmentGridAttribute()
+            : base(Key)
+        {
         }
     }
 }

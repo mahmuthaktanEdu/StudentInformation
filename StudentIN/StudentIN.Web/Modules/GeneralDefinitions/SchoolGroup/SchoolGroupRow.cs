@@ -13,6 +13,8 @@ namespace StudentIN.GeneralDefinitions.Entities
     [ConnectionKey("Default"), DisplayName("SchoolGroup"), InstanceName("SchoolGroup"), TwoLevelCached]
     [ReadPermission("Administration")]
     [ModifyPermission("Administration")]
+    [LookupScript("StudentIN.SchoolGroup")]
+
     public sealed class SchoolGroupRow : Row, IIdRow, INameRow
     {
         [DisplayName("Id"), Column("ID"), Identity]

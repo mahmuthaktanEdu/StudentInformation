@@ -13,6 +13,8 @@ namespace StudentIN.GeneralDefinitions.Entities
     [ConnectionKey("Default"), DisplayName("RecordState"), InstanceName("RecordState"), TwoLevelCached]
     [ReadPermission("Administration")]
     [ModifyPermission("Administration")]
+    [LookupScript("StudentIN.RecordState")]
+
     public sealed class RecordStateRow : Row, IIdRow, INameRow
     {
         [DisplayName("Id"), Column("ID"), Identity]

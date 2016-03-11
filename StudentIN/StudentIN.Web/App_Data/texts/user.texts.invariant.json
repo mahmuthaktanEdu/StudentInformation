@@ -8,6 +8,8 @@
     "Db.GeneralDefinitions.Class.EntitySingular": "Sınıf Tanımı",
     "Db.GeneralDefinitions.Class.Name": "Sınıf Adı",
     "Db.GeneralDefinitions.Class.SessionName": "Öğretim Dönemi",
+    "Db.GeneralDefinitions.Consultant.EntityPlural": "Danışman Tanımları",
+    "Db.GeneralDefinitions.Consultant.EntitySingular": "Danışman Bilgileri",
     "Db.GeneralDefinitions.Department.Code": "Şube Kodu",
     "Db.GeneralDefinitions.Department.EntityPlural": "Şube Listesi",
     "Db.GeneralDefinitions.Department.EntitySingular": "Şube Tanımı",
@@ -19,6 +21,9 @@
     "Db.StudentMain.Student.DepartmentCityId": "Şehir Id",
     "Db.StudentMain.Student.DepartmentCode": "Şube Kodu",
     "Db.StudentMain.Student.DepartmentName": "Şube Adı",
+    "Db.StudentMain.Student.EnrollmentDate": "Kayıt Tarihi",
+    "Db.StudentMain.Student.Gender": "Cinsiyeti",
+    "Db.StudentMain.Student.PreEnrollmentDate": "Ön Kayıt Tarihi",
     "Navigation.GeneralDefinitions.City": "Şehir Tanımları",
     "Navigation.GeneralDefinitions/City": "Şehir Tanımları",
     "Navigation.GeneralDefinitions/Class": "Sınıf Tanımları",
@@ -29,5 +34,6 @@
     "Navigation.GeneralDefinitions/RecordState": "Kayıt Turu Tanımları",
     "Navigation.GeneralDefinitions/Relative": "Akrabalık İlişkisi Tanımları",
     "Navigation.GeneralDefinitions/SchoolGroup": "Okul Grubu Tanımları",
-    "Navigation.GeneralDefinitions/Section": "Öğrenci Türü Tanımları"
+    "Navigation.GeneralDefinitions/Section": "Öğrenci Türü Tanımları",
+    "Navigation.SiteTitle": "Fen Bilimleri Merkezi"
 }

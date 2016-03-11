@@ -13,6 +13,7 @@ namespace StudentIN.GeneralDefinitions.Entities
     [ConnectionKey("Default"), DisplayName("Class"), InstanceName("Class"), TwoLevelCached]
     [ReadPermission("Administration")]
     [ModifyPermission("Administration")]
+    [LookupScript("StudentIN.Class")]
     public sealed class ClassRow : Row, IIdRow, INameRow
     {
         [DisplayName("Id"), Column("ID"), Identity]
@@ -29,26 +30,27 @@ namespace StudentIN.GeneralDefinitions.Entities
             set { Fields.DepartmentId[this] = value; }
         }
 
-        [DisplayName("Class Code"), Size(6), NotNull, QuickSearch]
+        [DisplayName("Name"), Size(10), QuickSearch, LookupInclude]
+        public String Name
+        {
+            get { return Fields.Name[this]; }
+            set { Fields.Name[this] = value; }
+        }
+        [DisplayName("Class Code"), Size(6), NotNull]
         public String ClassCode
         {
             get { return Fields.ClassCode[this]; }
             set { Fields.ClassCode[this] = value; }
         }
 
-        [DisplayName("Session Name"), Size(10)]
+        [DisplayName("Session Name"), Size(10), LookupInclude]
         public String SessionName
         {
             get { return Fields.SessionName[this]; }
             set { Fields.SessionName[this] = value; }
         }
 
-        [DisplayName("Name"), Size(10)]
-        public String Name
-        {
-            get { return Fields.Name[this]; }
-            set { Fields.Name[this] = value; }
-        }
+
 
         IIdField IIdRow.IdField
         {

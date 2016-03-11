@@ -13,6 +13,8 @@ namespace StudentIN.GeneralDefinitions.Entities
     [ConnectionKey("Default"), DisplayName("PaymentType"), InstanceName("PaymentType"), TwoLevelCached]
     [ReadPermission("Administration")]
     [ModifyPermission("Administration")]
+    [LookupScript("StudentIN.PaymentType")]
+
     public sealed class PaymentTypeRow : Row, IIdRow, INameRow
     {
         [DisplayName("Id"), Column("ID"), Identity]

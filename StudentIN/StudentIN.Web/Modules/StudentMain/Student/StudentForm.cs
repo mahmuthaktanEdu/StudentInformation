@@ -13,6 +13,7 @@ namespace StudentIN.StudentMain.Forms
     [BasedOnRow(typeof(Entities.StudentRow))]
     public class StudentForm
     {
+        [DepartmentEditor]
         public Int32 DepartmentId { get; set; }
         public Int32 No { get; set; }
         public String Name { get; set; }
@@ -24,8 +25,11 @@ namespace StudentIN.StudentMain.Forms
         public Int32 GroupPhoto { get; set; }
         public Boolean Photo { get; set; }
         public Boolean Graduated { get; set; }
+        [SectionEditor]
         public Int32 SectionId { get; set; }
+        [ClassEditor]
         public Int32 ClassId { get; set; }
+        [SchoolEditor]
         public Int32 SchoolId { get; set; }
         [ConsultantEditor]
         public Int32 ConsultantIId { get; set; }
@@ -38,6 +42,7 @@ namespace StudentIN.StudentMain.Forms
         public String ParentName { get; set; }
         public String ParentSurname { get; set; }
         public Int32 ParentOccupationId { get; set; }
+        [RelativeEditor]
         public Int32 RelativeId { get; set; }
         public String ParentMobile { get; set; }
         public String ParentPhone { get; set; }
@@ -51,7 +56,9 @@ namespace StudentIN.StudentMain.Forms
         public String ParentIdentityNumber { get; set; }
         public Boolean IsRecorded { get; set; }
         public DateTime RecordCancelDate { get; set; }
+        [RecordStateEditor]
         public Int32 RecordStateId { get; set; }
+        [PaymentTypeEditor]
         public Int32 PaymentTypeId { get; set; }
         public Int32 DiscountUserId { get; set; }
         public String DiscountDescription { get; set; }

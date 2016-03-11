@@ -36,21 +36,21 @@ namespace StudentIN.StudentMain.Entities
             set { Fields.No[this] = value; }
         }
 
-        [DisplayName("Name"), Size(40), QuickSearch]
+        [DisplayName("Name"), Size(50), QuickSearch]
         public String Name
         {
             get { return Fields.Name[this]; }
             set { Fields.Name[this] = value; }
         }
 
-        [DisplayName("Surname"), Size(40)]
+        [DisplayName("Surname"), Size(50)]
         public String Surname
         {
             get { return Fields.Surname[this]; }
             set { Fields.Surname[this] = value; }
         }
 
-        [DisplayName("Gender"), Size(10)]
+        [DisplayName("Gender"), Size(8)]
         public String Gender
         {
             get { return Fields.Gender[this]; }
@@ -344,7 +344,7 @@ namespace StudentIN.StudentMain.Entities
             set { Fields.DepartmentCode[this] = value; }
         }
 
-        [DisplayName("Department Name"), Expression("jDepartment.[Name]")]
+        [DisplayName("Department Name"), Expression("jDepartment.[Name]"),Size(8)]
         public String DepartmentName
         {
             get { return Fields.DepartmentName[this]; }
@@ -435,7 +435,7 @@ namespace StudentIN.StudentMain.Entities
             set { Fields.ConsultantIDepartmentId[this] = value; }
         }
 
-        [DisplayName("Consultant I Name"), Expression("jConsultantI.[Name]")]
+        [DisplayName("Consultant I Name"), Expression("jConsultantI.[Name]"), Size(8) ]
         public String ConsultantIName
         {
             get { return Fields.ConsultantIName[this]; }
@@ -470,14 +470,14 @@ namespace StudentIN.StudentMain.Entities
             set { Fields.ParentWorkCityName[this] = value; }
         }
 
-        [DisplayName("Record State Name"), Expression("jRecordState.[Name]")]
+        [DisplayName("Record State Name"), Expression("jRecordState.[Name]"),Size(8)]
         public String RecordStateName
         {
             get { return Fields.RecordStateName[this]; }
             set { Fields.RecordStateName[this] = value; }
         }
 
-        [DisplayName("Payment Type Name"), Expression("jPaymentType.[Name]")]
+        [DisplayName("Payment Type Name"), Expression("jPaymentType.[Name]"), Size(8)]
         public String PaymentTypeName
         {
             get { return Fields.PaymentTypeName[this]; }

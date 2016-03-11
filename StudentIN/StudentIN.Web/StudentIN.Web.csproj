@@ -1169,6 +1169,7 @@
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="Content\toastr.scss" />
     <Content Include="Content\toastr.less" />
+    <Content Include="Content\site\site.studentin.less" />
     <None Include="Scripts\jquery-2.2.0.intellisense.js" />
     <Content Include="Scripts\jlayout.border.js" />
     <Content Include="Scripts\jlayout.border.min.js" />
@@ -1501,6 +1502,11 @@
     <Content Include="Modules\GeneralDefinitions\SchoolGroup\SchoolGroupIndex.cshtml" />
     <Content Include="Modules\GeneralDefinitions\Section\SectionIndex.cshtml" />
     <Content Include="Modules\StudentMain\Student\StudentIndex.cshtml" />
+    <Content Include="Modules\GeneralDefinitions\School\SchoolIndex.cshtml" />
+    <Content Include="Modules\StudentMain\Payment\PaymentIndex.cshtml" />
+    <Content Include="Modules\StudentMain\PaymentInstallment\PaymentInstallmentIndex.cshtml" />
+    <Content Include="Modules\StudentMain\InvoiceInformation\InvoiceInformationIndex.cshtml" />
+    <Content Include="Modules\StudentMain\StudentDiscount\StudentDiscountIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -1622,6 +1628,7 @@
     <Compile Include="Modules\Northwind\Supplier\SupplierColumns.cs" />
     <Compile Include="Modules\Northwind\Supplier\SupplierCountryLookup.cs" />
     <Compile Include="Modules\Northwind\Territory\TerritoryColumns.cs" />
+    <Content Include="Modules\StudentMain\Student\StudentDialog.Template.html" />
     <Compile Include="Modules\Texts.cs" />
     <Compile Include="Modules\Membership\Account\AccountPage.cs" />
     <Compile Include="Modules\Administration\User\Authentication\AuthorizationService.cs" />
@@ -1801,6 +1808,36 @@
     <Compile Include="Modules\StudentMain\Student\StudentRepository.cs" />
     <Compile Include="Modules\StudentMain\Student\StudentEndpoint.cs" />
     <Compile Include="Modules\StudentMain\Student\StudentPage.cs" />
+    <Compile Include="Modules\GeneralDefinitions\School\SchoolRow.cs" />
+    <Compile Include="Modules\GeneralDefinitions\School\SchoolColumns.cs" />
+    <Compile Include="Modules\GeneralDefinitions\School\SchoolForm.cs" />
+    <Compile Include="Modules\GeneralDefinitions\School\SchoolRepository.cs" />
+    <Compile Include="Modules\GeneralDefinitions\School\SchoolEndpoint.cs" />
+    <Compile Include="Modules\GeneralDefinitions\School\SchoolPage.cs" />
+    <Compile Include="Modules\StudentMain\Payment\PaymentRow.cs" />
+    <Compile Include="Modules\StudentMain\Payment\PaymentColumns.cs" />
+    <Compile Include="Modules\StudentMain\Payment\PaymentForm.cs" />
+    <Compile Include="Modules\StudentMain\Payment\PaymentRepository.cs" />
+    <Compile Include="Modules\StudentMain\Payment\PaymentEndpoint.cs" />
+    <Compile Include="Modules\StudentMain\Payment\PaymentPage.cs" />
+    <Compile Include="Modules\StudentMain\PaymentInstallment\PaymentInstallmentRow.cs" />
+    <Compile Include="Modules\StudentMain\PaymentInstallment\PaymentInstallmentColumns.cs" />
+    <Compile Include="Modules\StudentMain\PaymentInstallment\PaymentInstallmentForm.cs" />
+    <Compile Include="Modules\StudentMain\PaymentInstallment\PaymentInstallmentRepository.cs" />
+    <Compile Include="Modules\StudentMain\PaymentInstallment\PaymentInstallmentEndpoint.cs" />
+    <Compile Include="Modules\StudentMain\PaymentInstallment\PaymentInstallmentPage.cs" />
+    <Compile Include="Modules\StudentMain\InvoiceInformation\InvoiceInformationRow.cs" />
+    <Compile Include="Modules\StudentMain\InvoiceInformation\InvoiceInformationColumns.cs" />
+    <Compile Include="Modules\StudentMain\InvoiceInformation\InvoiceInformationForm.cs" />
+    <Compile Include="Modules\StudentMain\InvoiceInformation\InvoiceInformationRepository.cs" />
+    <Compile Include="Modules\StudentMain\InvoiceInformation\InvoiceInformationEndpoint.cs" />
+    <Compile Include="Modules\StudentMain\InvoiceInformation\InvoiceInformationPage.cs" />
+    <Compile Include="Modules\StudentMain\StudentDiscount\StudentDiscountRow.cs" />
+    <Compile Include="Modules\StudentMain\StudentDiscount\StudentDiscountColumns.cs" />
+    <Compile Include="Modules\StudentMain\StudentDiscount\StudentDiscountForm.cs" />
+    <Compile Include="Modules\StudentMain\StudentDiscount\StudentDiscountRepository.cs" />
+    <Compile Include="Modules\StudentMain\StudentDiscount\StudentDiscountEndpoint.cs" />
+    <Compile Include="Modules\StudentMain\StudentDiscount\StudentDiscountPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

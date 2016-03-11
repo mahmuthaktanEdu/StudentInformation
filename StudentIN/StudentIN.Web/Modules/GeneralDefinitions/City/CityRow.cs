@@ -13,6 +13,8 @@ namespace StudentIN.GeneralDefinitions.Entities
     [ConnectionKey("Default"), DisplayName("City"), InstanceName("City"), TwoLevelCached]
     [ReadPermission("Administration")]
     [ModifyPermission("Administration")]
+    [LookupScript("StudentIN.City")]
+
     public sealed class CityRow : Row, IIdRow, INameRow
     {
         [DisplayName("Id"), Column("ID"), Identity]

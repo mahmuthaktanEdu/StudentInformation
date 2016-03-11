@@ -6,12 +6,12 @@ namespace StudentIN.GeneralDefinitions
     using Serenity;
 
     [Editor]
-    public class ConsultantEditor:LookupEditorBase<ConsultantRow>
+    public class DepartmentEditor:LookupEditorBase<DepartmentRow>
     {
-        public ConsultantEditor(jQueryObject hidden): base (hidden){}
+        public DepartmentEditor(jQueryObject hidden): base (hidden){}
         protected override string GetLookupKey()
         {
-            return ConsultantRow.LookupKey;
+            return DepartmentRow.LookupKey;
         }
     }   
 }

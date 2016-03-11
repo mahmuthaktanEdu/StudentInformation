@@ -13,6 +13,8 @@ namespace StudentIN.GeneralDefinitions.Entities
     [ConnectionKey("Default"), DisplayName("Relative"), InstanceName("Relative"), TwoLevelCached]
     [ReadPermission("Administration")]
     [ModifyPermission("Administration")]
+    [LookupScript("StudentIN.Relative")]
+
     public sealed class RelativeRow : Row, IIdRow, INameRow
     {
         [DisplayName("Id"), Column("ID"), Identity]
