@@ -1,7 +1,6 @@
 ﻿
 
-[assembly:Serenity.Navigation.NavigationLink(int.MaxValue, "StudentMain/Student", typeof(StudentIN.StudentMain.Pages.StudentController))]
-
+ 
 namespace StudentIN.StudentMain.Pages
 {
     using Serenity;

@@ -15,6 +15,9 @@ namespace StudentIN.StudentMain
         [InlineConstant] public const string IdProperty = "Id";
         [InlineConstant] public const string NameProperty = "Name";
         [InlineConstant] public const string LocalTextPrefix = "StudentMain.Student";
+        [InlineConstant] public const string LookupKey = "StudentIN.Student";
+    
+        public static Lookup<StudentRow> Lookup { [InlineCode("Q.getLookup('StudentIN.Student')")] get { return null; } }
     
         public Int32? Id { get; set; }
         public Int32? DepartmentId { get; set; }
@@ -58,9 +61,9 @@ namespace StudentIN.StudentMain
         public Int32? PaymentTypeId { get; set; }
         public Int32? DiscountUserId { get; set; }
         public String DiscountDescription { get; set; }
-        public String CreatedBy { get; set; }
+        public Int32 CreatedBy  { get; set; }
         public String CreatedDate { get; set; }
-        public String LastModifiedBy { get; set; }
+        public Int32 LastModifiedBy { get; set; }
         public String LastModifiedDate { get; set; }
         public Int32? DepartmentCode { get; set; }
         public String DepartmentName { get; set; }

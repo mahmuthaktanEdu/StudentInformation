@@ -13,7 +13,8 @@ namespace StudentIN.StudentMain.Entities
     [ConnectionKey("Default"), DisplayName("Student"), InstanceName("Student"), TwoLevelCached]
     [ReadPermission("Administration")]
     [ModifyPermission("Administration")]
-    public sealed class StudentRow : Row, IIdRow, INameRow
+    [LookupScript("StudentIN.Student")]
+    public sealed class StudentRow :  Row, IIdRow, INameRow
     {
         [DisplayName("Id"), Column("ID"), Identity]
         public Int32? Id
@@ -310,7 +311,7 @@ namespace StudentIN.StudentMain.Entities
         }
 
         [DisplayName("Created By"), Size(20)]
-        public String CreatedBy
+        public Int32? CreatedBy
         {
             get { return Fields.CreatedBy[this]; }
             set { Fields.CreatedBy[this] = value; }
@@ -324,7 +325,7 @@ namespace StudentIN.StudentMain.Entities
         }
 
         [DisplayName("Last Modified By"), Size(20)]
-        public String LastModifiedBy
+        public Int32? LastModifiedBy
         {
             get { return Fields.LastModifiedBy[this]; }
             set { Fields.LastModifiedBy[this] = value; }
@@ -552,9 +553,9 @@ namespace StudentIN.StudentMain.Entities
             public Int32Field PaymentTypeId;
             public Int32Field DiscountUserId;
             public StringField DiscountDescription;
-            public StringField CreatedBy;
+            public Int32Field CreatedBy;
             public DateTimeField CreatedDate;
-            public StringField LastModifiedBy;
+            public Int32Field LastModifiedBy;
             public DateTimeField LastModifiedDate;
 
             public Int32Field DepartmentCode;
@@ -589,6 +590,9 @@ namespace StudentIN.StudentMain.Entities
 
             public StringField PaymentTypeName;
             public DecimalField PaymentTypePaymentAmount;
+
+     
+
 
             public RowFields()
                 : base("[dbo].[Student]")

@@ -441,6 +441,7 @@
     <Compile Include="StudentMain\PaymentInstallment\SubPaymentInstallmentGrid.cs" />
     <Compile Include="StudentMain\Payment\SubPaymentGrid.cs" />
     <Compile Include="StudentMain\StudentDiscount\SubStudentDiscountGrid.cs" />
+    <Compile Include="StudentMain\Student\StudentEditor.cs" />
     <Compile Include="StudentMain\Student\StudentGrid.cs" />
     <Compile Include="StudentMain\Student\StudentDialog.cs" />
     <Compile Include="Imports\FormContexts\GeneralDefinitions.SchoolForm.cs">

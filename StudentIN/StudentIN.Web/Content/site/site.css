@@ -7895,44 +7895,44 @@ section.content > .s-DataGrid {
   overflow-y: hidden;
 }
 .s-StudentMain-StudentDialog > .size {
-  min-width: 800px;
-  width: 800px;
-  min-height: 740px;
-  height: 740px;
+  min-width: 850px;
+  width: 850px;
+  min-height: 850px;
+  height: 850px;
 }
 .s-StudentMain-StudentDialog .tab-pane {
   height: auto;
 }
 .s-StudentMain-StudentDialog .caption {
-  width: 120px;
+  width: 150px;
 }
 .s-StudentMain-StudentDialog .editor {
-  width: 350px;
+  width: 400px;
 }
 .s-StudentMain-StudentDialog input.editor[type=checkbox] {
   width: auto;
 }
 .s-StudentMain-StudentDialog .s-Form .editor.dateQ {
-  width: 326px;
+  width: 376px;
 }
 .s-StudentMain-StudentDialog .s-Form .editor.emailuser {
   width: 170px;
 }
 .s-StudentMain-StudentDialog .s-Form .editor.dateQ.s-DateTimeEditor {
-  width: 231px;
+  width: 281px;
 }
 .s-StudentMain-StudentDialog .s-Form .editor.s-DateTimeEditor.time {
   width: 64px;
   margin-left: 4px;
 }
 .s-StudentMain-StudentDialog .s-Form .editor.has-inplace-button {
-  width: 324px;
+  width: 374px;
 }
 .s-StudentMain-StudentDialog .s-Form .emaildomain {
-  width: 165px;
+  width: 215px;
 }
 .s-StudentMain-StudentDialog .s-PropertyGrid .categories {
-  height: 490px;
+  height: 660px;
 }
 /* ------------------------------------------------------------------------- */
 /* APPENDED BY CODE GENERATOR, MOVE TO CORRECT PLACE AND REMOVE THIS COMMENT */
@@ -8424,47 +8424,6 @@ section.content > .s-DataGrid {
   width: 215px;
 }
 .s-GeneralDefinitions-SectionDialog .s-PropertyGrid .categories {
-  height: 260px;
-}
-/* ------------------------------------------------------------------------- */
-/* APPENDED BY CODE GENERATOR, MOVE TO CORRECT PLACE AND REMOVE THIS COMMENT */
-/* ------------------------------------------------------------------------- */
-.s-StudentMain-StudentDialog > .size {
-  min-width: 650px;
-  width: 650px;
-}
-.s-StudentMain-StudentDialog .tab-pane {
-  height: auto;
-}
-.s-StudentMain-StudentDialog .caption {
-  width: 150px;
-}
-.s-StudentMain-StudentDialog .editor {
-  width: 400px;
-}
-.s-StudentMain-StudentDialog input.editor[type=checkbox] {
-  width: auto;
-}
-.s-StudentMain-StudentDialog .s-Form .editor.dateQ {
-  width: 376px;
-}
-.s-StudentMain-StudentDialog .s-Form .editor.emailuser {
-  width: 170px;
-}
-.s-StudentMain-StudentDialog .s-Form .editor.dateQ.s-DateTimeEditor {
-  width: 281px;
-}
-.s-StudentMain-StudentDialog .s-Form .editor.s-DateTimeEditor.time {
-  width: 64px;
-  margin-left: 4px;
-}
-.s-StudentMain-StudentDialog .s-Form .editor.has-inplace-button {
-  width: 374px;
-}
-.s-StudentMain-StudentDialog .s-Form .emaildomain {
-  width: 215px;
-}
-.s-StudentMain-StudentDialog .s-PropertyGrid .categories {
   height: 260px;
 }
 /* ------------------------------------------------------------------------- */

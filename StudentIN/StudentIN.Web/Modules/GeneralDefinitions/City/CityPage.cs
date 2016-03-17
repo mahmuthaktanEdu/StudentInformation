@@ -1,7 +1,5 @@
 ﻿
 
-[assembly:Serenity.Navigation.NavigationLink(int.MaxValue, "GeneralDefinitions/City", typeof(StudentIN.GeneralDefinitions.Pages.CityController))]
-
 namespace StudentIN.GeneralDefinitions.Pages
 {
     using Serenity;

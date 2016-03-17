@@ -71,8 +71,12 @@ using Basic = StudentIN.BasicSamples.Pages;
 [assembly: NavigationLink(8820, "Theme Samples/Examples/Pace Page", url: "~/AdminLTE/Examples/PacePage", permission: "")]
 
 [assembly: NavigationMenu(8900, "GeneralDefinitions", icon: "icon-anchor")]
-[assembly: NavigationLink(8910, "GeneralDefinitions/City", typeof(StudentIN.GeneralDefinitions.Pages.CityController), icon: "icon-wallet")]
+[assembly: NavigationLink(8910, "GeneralDefinitions/City", typeof(StudentIN.GeneralDefinitions.Pages.CityController), icon: "icon-screen-tablet")]
 [assembly: NavigationLink(8920, "GeneralDefinitions/Class", typeof(StudentIN.GeneralDefinitions.Pages.ClassController), icon: "icon-basket-loaded")]
+
+[assembly: NavigationMenu(8900, "StudentMain", icon: "icon-anchor")]
+[assembly: NavigationLink(8910, "StudentMain/Student", typeof(StudentIN.StudentMain.Pages.StudentController), icon: "icon-book-open")]
+
 
 [assembly: NavigationMenu(9000, "Administration", icon: "icon-screen-desktop")]
 [assembly: NavigationLink(9100, "Administration/Languages", typeof(Administration.LanguageController), icon: "icon-bubbles")]

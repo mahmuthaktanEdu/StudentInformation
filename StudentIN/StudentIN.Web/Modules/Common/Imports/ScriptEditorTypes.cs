@@ -630,6 +630,56 @@ namespace StudentIN.Northwind
 
 namespace StudentIN.StudentMain
 {
+    public partial class StudentEditorAttribute : CustomEditorAttribute
+    {
+        public const string Key = "StudentIN.StudentMain.StudentEditor";
+    
+        public StudentEditorAttribute()
+            : base(Key)
+        {
+        }
+    
+        public String CascadeField
+        {
+            get { return GetOption<String>("cascadeField"); }
+            set { SetOption("cascadeField", value); }
+        }
+    
+        public String CascadeFrom
+        {
+            get { return GetOption<String>("cascadeFrom"); }
+            set { SetOption("cascadeFrom", value); }
+        }
+    
+        public Object CascadeValue
+        {
+            get { return GetOption<Object>("cascadeValue"); }
+            set { SetOption("cascadeValue", value); }
+        }
+    
+        public String FilterField
+        {
+            get { return GetOption<String>("filterField"); }
+            set { SetOption("filterField", value); }
+        }
+    
+        public Object FilterValue
+        {
+            get { return GetOption<Object>("filterValue"); }
+            set { SetOption("filterValue", value); }
+        }
+    }
+
+    public partial class SubInvoiceInformationGridAttribute : CustomEditorAttribute
+    {
+        public const string Key = "StudentIN.StudentMain.SubInvoiceInformationGrid";
+    
+        public SubInvoiceInformationGridAttribute()
+            : base(Key)
+        {
+        }
+    }
+
     public partial class SubPaymentGridAttribute : CustomEditorAttribute
     {
         public const string Key = "StudentIN.StudentMain.SubPaymentGrid";
@@ -645,6 +695,16 @@ namespace StudentIN.StudentMain
         public const string Key = "StudentIN.StudentMain.SubPaymentInstallmentGrid";
     
         public SubPaymentInstallmentGridAttribute()
+            : base(Key)
+        {
+        }
+    }
+
+    public partial class SubStudentDiscountGridAttribute : CustomEditorAttribute
+    {
+        public const string Key = "StudentIN.StudentMain.SubStudentDiscountGrid";
+    
+        public SubStudentDiscountGridAttribute()
             : base(Key)
         {
         }

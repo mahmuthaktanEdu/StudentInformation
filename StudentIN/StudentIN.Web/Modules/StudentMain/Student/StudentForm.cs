@@ -62,9 +62,9 @@ namespace StudentIN.StudentMain.Forms
         public Int32 PaymentTypeId { get; set; }
         public Int32 DiscountUserId { get; set; }
         public String DiscountDescription { get; set; }
-        public String CreatedBy { get; set; }
+        public Int32 CreatedBy  { get; set; }
         public DateTime CreatedDate { get; set; }
-        public String LastModifiedBy { get; set; }
+        public Int32 LastModifiedBy { get; set; }
         public DateTime LastModifiedDate { get; set; }
     }
 }

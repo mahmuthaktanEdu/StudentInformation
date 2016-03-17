@@ -1908,6 +1908,13 @@
 	$StudentIN_StudentMain_StudentDiscountGrid.__typeName = 'StudentIN.StudentMain.StudentDiscountGrid';
 	global.StudentIN.StudentMain.StudentDiscountGrid = $StudentIN_StudentMain_StudentDiscountGrid;
 	////////////////////////////////////////////////////////////////////////////////
+	// StudentIN.StudentMain.StudentEditor
+	var $StudentIN_StudentMain_StudentEditor = function(hidden) {
+		ss.makeGenericType(Serenity.LookupEditorBase$1, [Object]).call(this, hidden);
+	};
+	$StudentIN_StudentMain_StudentEditor.__typeName = 'StudentIN.StudentMain.StudentEditor';
+	global.StudentIN.StudentMain.StudentEditor = $StudentIN_StudentMain_StudentEditor;
+	////////////////////////////////////////////////////////////////////////////////
 	// StudentIN.StudentMain.StudentForm
 	var $StudentIN_StudentMain_StudentForm = function(idPrefix) {
 		Serenity.PrefixedContext.call(this, idPrefix);
@@ -4158,7 +4165,7 @@
 	}, ss.makeGenericType(Serenity.EntityDialog$1, [Object]), [Serenity.IDialog, Serenity.IEditDialog]);
 	ss.initClass($StudentIN_StudentMain_PaymentForm, $asm, {
 		get_departmentId: function() {
-			return this.byId(Serenity.IntegerEditor).call(this, 'DepartmentId');
+			return this.byId($StudentIN_GeneralDefinitions_DepartmentEditor).call(this, 'DepartmentId');
 		},
 		get_studentId: function() {
 			return this.byId(Serenity.IntegerEditor).call(this, 'StudentId');
@@ -4294,6 +4301,11 @@
 		}
 	}, Serenity.PrefixedContext);
 	ss.initClass($StudentIN_StudentMain_StudentDiscountGrid, $asm, {}, ss.makeGenericType(Serenity.EntityGrid$1, [Object]), [Serenity.IDataGrid]);
+	ss.initClass($StudentIN_StudentMain_StudentEditor, $asm, {
+		getLookupKey: function() {
+			return 'StudentIN.Student';
+		}
+	}, ss.makeGenericType(Serenity.LookupEditorBase$1, [Object]), [Serenity.ISetEditValue, Serenity.IGetEditValue, Serenity.IStringValue]);
 	ss.initClass($StudentIN_StudentMain_StudentForm, $asm, {
 		get_departmentId: function() {
 			return this.byId($StudentIN_GeneralDefinitions_DepartmentEditor).call(this, 'DepartmentId');
@@ -4703,6 +4715,7 @@
 	ss.setMetadata($StudentIN_StudentMain_StudentDialog, { attr: [new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('Name'), new Serenity.FlexifyAttribute(), new Serenity.MaximizableAttribute(), new Serenity.FormKeyAttribute('StudentMain.Student'), new Serenity.LocalTextPrefixAttribute('StudentMain.Student'), new Serenity.ServiceAttribute('StudentMain/Student')] });
 	ss.setMetadata($StudentIN_StudentMain_StudentDiscountDialog, { attr: [new Serenity.IdPropertyAttribute('Id'), new Serenity.FormKeyAttribute('StudentMain.StudentDiscount'), new Serenity.LocalTextPrefixAttribute('StudentMain.StudentDiscount'), new Serenity.ServiceAttribute('StudentMain/StudentDiscount')] });
 	ss.setMetadata($StudentIN_StudentMain_StudentDiscountGrid, { attr: [new Serenity.ColumnsKeyAttribute('StudentMain.StudentDiscount'), new Serenity.IdPropertyAttribute('Id'), new Serenity.DialogTypeAttribute($StudentIN_StudentMain_StudentDiscountDialog), new Serenity.LocalTextPrefixAttribute('StudentMain.StudentDiscount'), new Serenity.ServiceAttribute('StudentMain/StudentDiscount')] });
+	ss.setMetadata($StudentIN_StudentMain_StudentEditor, { attr: [new Serenity.EditorAttribute()] });
 	ss.setMetadata($StudentIN_StudentMain_StudentGrid, { attr: [new Serenity.ColumnsKeyAttribute('StudentMain.Student'), new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('Name'), new Serenity.DialogTypeAttribute($StudentIN_StudentMain_StudentDialog), new Serenity.LocalTextPrefixAttribute('StudentMain.Student'), new Serenity.ServiceAttribute('StudentMain/Student')] });
 	ss.setMetadata($StudentIN_StudentMain_SubInvoiceInformationGrid, { attr: [new Serenity.ElementAttribute('<div/>'), new Serenity.EditorAttribute()] });
 	ss.setMetadata($StudentIN_StudentMain_SubPaymentGrid, { attr: [new Serenity.ElementAttribute('<div/>'), new Serenity.EditorAttribute()] });

@@ -1,7 +1,4 @@
 ﻿
-
-[assembly:Serenity.Navigation.NavigationLink(int.MaxValue, "GeneralDefinitions/Class", typeof(StudentIN.GeneralDefinitions.Pages.ClassController))]
-
 namespace StudentIN.GeneralDefinitions.Pages
 {
     using Serenity;
