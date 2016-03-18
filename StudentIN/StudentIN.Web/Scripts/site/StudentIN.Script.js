@@ -4168,10 +4168,7 @@
 			return this.byId($StudentIN_GeneralDefinitions_DepartmentEditor).call(this, 'DepartmentId');
 		},
 		get_studentId: function() {
-			return this.byId(Serenity.IntegerEditor).call(this, 'StudentId');
-		},
-		get_paymentDate: function() {
-			return this.byId(Serenity.DateEditor).call(this, 'PaymentDate');
+			return this.byId($StudentIN_StudentMain_StudentEditor).call(this, 'StudentId');
 		},
 		get_paymentDateTime: function() {
 			return this.byId(Serenity.DateEditor).call(this, 'PaymentDateTime');
@@ -4217,13 +4214,13 @@
 	}, ss.makeGenericType(Serenity.EntityDialog$1, [Object]), [Serenity.IDialog, Serenity.IEditDialog]);
 	ss.initClass($StudentIN_StudentMain_PaymentInstallmentForm, $asm, {
 		get_createdBy: function() {
-			return this.byId(Serenity.StringEditor).call(this, 'CreatedBy');
+			return this.byId(Serenity.IntegerEditor).call(this, 'CreatedBy');
 		},
 		get_createdDate: function() {
 			return this.byId(Serenity.DateEditor).call(this, 'CreatedDate');
 		},
 		get_lastModifiedBy: function() {
-			return this.byId(Serenity.StringEditor).call(this, 'LastModifiedBy');
+			return this.byId(Serenity.IntegerEditor).call(this, 'LastModifiedBy');
 		},
 		get_lastModifiedDate: function() {
 			return this.byId(Serenity.DateEditor).call(this, 'LastModifiedDate');
@@ -4431,13 +4428,13 @@
 			return this.byId(Serenity.StringEditor).call(this, 'DiscountDescription');
 		},
 		get_createdBy: function() {
-			return this.byId(Serenity.StringEditor).call(this, 'CreatedBy');
+			return this.byId(Serenity.IntegerEditor).call(this, 'CreatedBy');
 		},
 		get_createdDate: function() {
 			return this.byId(Serenity.DateEditor).call(this, 'CreatedDate');
 		},
 		get_lastModifiedBy: function() {
-			return this.byId(Serenity.StringEditor).call(this, 'LastModifiedBy');
+			return this.byId(Serenity.IntegerEditor).call(this, 'LastModifiedBy');
 		},
 		get_lastModifiedDate: function() {
 			return this.byId(Serenity.DateEditor).call(this, 'LastModifiedDate');
@@ -4708,10 +4705,10 @@
 	ss.setMetadata($StudentIN_Northwind_TerritoryGrid, { attr: [new Serenity.ColumnsKeyAttribute('Northwind.Territory'), new Serenity.IdPropertyAttribute('ID'), new Serenity.NamePropertyAttribute('TerritoryID'), new Serenity.DialogTypeAttribute($StudentIN_Northwind_TerritoryDialog), new Serenity.LocalTextPrefixAttribute('Northwind.Territory'), new Serenity.ServiceAttribute('Northwind/Territory')] });
 	ss.setMetadata($StudentIN_StudentMain_InvoiceInformationDialog, { attr: [new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('InvoicedPersonName'), new Serenity.FormKeyAttribute('StudentMain.InvoiceInformation'), new Serenity.LocalTextPrefixAttribute('StudentMain.InvoiceInformation'), new Serenity.ServiceAttribute('StudentMain/InvoiceInformation')] });
 	ss.setMetadata($StudentIN_StudentMain_InvoiceInformationGrid, { attr: [new Serenity.ColumnsKeyAttribute('StudentMain.InvoiceInformation'), new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('InvoicedPersonName'), new Serenity.DialogTypeAttribute($StudentIN_StudentMain_InvoiceInformationDialog), new Serenity.LocalTextPrefixAttribute('StudentMain.InvoiceInformation'), new Serenity.ServiceAttribute('StudentMain/InvoiceInformation')] });
-	ss.setMetadata($StudentIN_StudentMain_PaymentDialog, { attr: [new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('CreatedBy'), new Serenity.FormKeyAttribute('StudentMain.Payment'), new Serenity.LocalTextPrefixAttribute('StudentMain.Payment'), new Serenity.ServiceAttribute('StudentMain/Payment')] });
-	ss.setMetadata($StudentIN_StudentMain_PaymentGrid, { attr: [new Serenity.ColumnsKeyAttribute('StudentMain.Payment'), new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('CreatedBy'), new Serenity.DialogTypeAttribute($StudentIN_StudentMain_PaymentDialog), new Serenity.LocalTextPrefixAttribute('StudentMain.Payment'), new Serenity.ServiceAttribute('StudentMain/Payment')] });
-	ss.setMetadata($StudentIN_StudentMain_PaymentInstallmentDialog, { attr: [new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('CreatedBy'), new Serenity.FormKeyAttribute('StudentMain.PaymentInstallment'), new Serenity.LocalTextPrefixAttribute('StudentMain.PaymentInstallment'), new Serenity.ServiceAttribute('StudentMain/PaymentInstallment')] });
-	ss.setMetadata($StudentIN_StudentMain_PaymentInstallmentGrid, { attr: [new Serenity.ColumnsKeyAttribute('StudentMain.PaymentInstallment'), new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('CreatedBy'), new Serenity.DialogTypeAttribute($StudentIN_StudentMain_PaymentInstallmentDialog), new Serenity.LocalTextPrefixAttribute('StudentMain.PaymentInstallment'), new Serenity.ServiceAttribute('StudentMain/PaymentInstallment')] });
+	ss.setMetadata($StudentIN_StudentMain_PaymentDialog, { attr: [new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('Description'), new Serenity.FormKeyAttribute('StudentMain.Payment'), new Serenity.LocalTextPrefixAttribute('StudentMain.Payment'), new Serenity.ServiceAttribute('StudentMain/Payment')] });
+	ss.setMetadata($StudentIN_StudentMain_PaymentGrid, { attr: [new Serenity.ColumnsKeyAttribute('StudentMain.Payment'), new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('Description'), new Serenity.DialogTypeAttribute($StudentIN_StudentMain_PaymentDialog), new Serenity.LocalTextPrefixAttribute('StudentMain.Payment'), new Serenity.ServiceAttribute('StudentMain/Payment')] });
+	ss.setMetadata($StudentIN_StudentMain_PaymentInstallmentDialog, { attr: [new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('Description'), new Serenity.FormKeyAttribute('StudentMain.PaymentInstallment'), new Serenity.LocalTextPrefixAttribute('StudentMain.PaymentInstallment'), new Serenity.ServiceAttribute('StudentMain/PaymentInstallment')] });
+	ss.setMetadata($StudentIN_StudentMain_PaymentInstallmentGrid, { attr: [new Serenity.ColumnsKeyAttribute('StudentMain.PaymentInstallment'), new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('Description'), new Serenity.DialogTypeAttribute($StudentIN_StudentMain_PaymentInstallmentDialog), new Serenity.LocalTextPrefixAttribute('StudentMain.PaymentInstallment'), new Serenity.ServiceAttribute('StudentMain/PaymentInstallment')] });
 	ss.setMetadata($StudentIN_StudentMain_StudentDialog, { attr: [new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('Name'), new Serenity.FlexifyAttribute(), new Serenity.MaximizableAttribute(), new Serenity.FormKeyAttribute('StudentMain.Student'), new Serenity.LocalTextPrefixAttribute('StudentMain.Student'), new Serenity.ServiceAttribute('StudentMain/Student')] });
 	ss.setMetadata($StudentIN_StudentMain_StudentDiscountDialog, { attr: [new Serenity.IdPropertyAttribute('Id'), new Serenity.FormKeyAttribute('StudentMain.StudentDiscount'), new Serenity.LocalTextPrefixAttribute('StudentMain.StudentDiscount'), new Serenity.ServiceAttribute('StudentMain/StudentDiscount')] });
 	ss.setMetadata($StudentIN_StudentMain_StudentDiscountGrid, { attr: [new Serenity.ColumnsKeyAttribute('StudentMain.StudentDiscount'), new Serenity.IdPropertyAttribute('Id'), new Serenity.DialogTypeAttribute($StudentIN_StudentMain_StudentDiscountDialog), new Serenity.LocalTextPrefixAttribute('StudentMain.StudentDiscount'), new Serenity.ServiceAttribute('StudentMain/StudentDiscount')] });

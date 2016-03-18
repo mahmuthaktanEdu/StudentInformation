@@ -61,9 +61,9 @@ namespace StudentIN.StudentMain
         public Int32? PaymentTypeId { get; set; }
         public Int32? DiscountUserId { get; set; }
         public String DiscountDescription { get; set; }
-        public Int32 CreatedBy  { get; set; }
+        public Int32? CreatedBy { get; set; }
         public String CreatedDate { get; set; }
-        public Int32 LastModifiedBy { get; set; }
+        public Int32? LastModifiedBy { get; set; }
         public String LastModifiedDate { get; set; }
         public Int32? DepartmentCode { get; set; }
         public String DepartmentName { get; set; }

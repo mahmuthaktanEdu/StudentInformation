@@ -56,9 +56,9 @@ namespace StudentIN.StudentMain
         public GeneralDefinitions.PaymentTypeEditor PaymentTypeId { get { return ById<GeneralDefinitions.PaymentTypeEditor>("PaymentTypeId"); } }
         public IntegerEditor DiscountUserId { get { return ById<IntegerEditor>("DiscountUserId"); } }
         public StringEditor DiscountDescription { get { return ById<StringEditor>("DiscountDescription"); } }
-        public StringEditor CreatedBy { get { return ById<StringEditor>("CreatedBy"); } }
+        public IntegerEditor CreatedBy { get { return ById<IntegerEditor>("CreatedBy"); } }
         public DateEditor CreatedDate { get { return ById<DateEditor>("CreatedDate"); } }
-        public StringEditor LastModifiedBy { get { return ById<StringEditor>("LastModifiedBy"); } }
+        public IntegerEditor LastModifiedBy { get { return ById<IntegerEditor>("LastModifiedBy"); } }
         public DateEditor LastModifiedDate { get { return ById<DateEditor>("LastModifiedDate"); } }
     }
 }
