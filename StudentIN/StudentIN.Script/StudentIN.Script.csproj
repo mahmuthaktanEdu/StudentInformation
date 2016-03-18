@@ -89,6 +89,9 @@
     <Compile Include="Imports\ServiceContracts\ScriptUserDefinition.cs">
       <DependentUpon>ServiceContracts.tt</DependentUpon>
     </Compile>
+    <Compile Include="Imports\ServiceContracts\StudentMain.PaymentTypes.cs">
+      <DependentUpon>ServiceContracts.tt</DependentUpon>
+    </Compile>
     <Compile Include="Membership\Authorization.cs" />
     <Compile Include="Common\Helper\GridEditorDialog.cs" />
     <Compile Include="Common\Navigation\ThemeSelection.cs" />

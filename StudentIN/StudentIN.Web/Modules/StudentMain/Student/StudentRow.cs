@@ -51,6 +51,13 @@ namespace StudentIN.StudentMain.Entities
             set { Fields.Surname[this] = value; }
         }
 
+        [DisplayName("Fullname"), Expression("T0.[Name]+' '+T0.[Surname]")]
+        public String Fullname
+        {
+            get { return Fields.Fullname[this]; }
+            set { Fields.Fullname[this] = value; }
+        }
+
         [DisplayName("Gender"), Size(8)]
         public String Gender
         {
@@ -499,7 +506,7 @@ namespace StudentIN.StudentMain.Entities
 
         StringField INameRow.NameField
         {
-            get { return Fields.Name; }
+            get { return Fields.Fullname; }
         }
 
         public static readonly RowFields Fields = new RowFields().Init();
@@ -516,6 +523,7 @@ namespace StudentIN.StudentMain.Entities
             public Int32Field No;
             public StringField Name;
             public StringField Surname;
+            public StringField Fullname;
             public StringField Gender;
             public DateTimeField PreEnrollmentDate;
             public DateTimeField EnrollmentDate;

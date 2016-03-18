@@ -1863,6 +1863,12 @@
 	$StudentIN_StudentMain_PaymentInstallmentGrid.__typeName = 'StudentIN.StudentMain.PaymentInstallmentGrid';
 	global.StudentIN.StudentMain.PaymentInstallmentGrid = $StudentIN_StudentMain_PaymentInstallmentGrid;
 	////////////////////////////////////////////////////////////////////////////////
+	// StudentIN.StudentMain.PaymentTypes
+	var $StudentIN_StudentMain_PaymentTypes = function() {
+	};
+	$StudentIN_StudentMain_PaymentTypes.__typeName = 'StudentIN.StudentMain.PaymentTypes';
+	global.StudentIN.StudentMain.PaymentTypes = $StudentIN_StudentMain_PaymentTypes;
+	////////////////////////////////////////////////////////////////////////////////
 	// StudentIN.StudentMain.StudentDialog
 	var $StudentIN_StudentMain_StudentDialog = function() {
 		this.$gridPayment = null;
@@ -4177,7 +4183,7 @@
 			return this.byId(Serenity.DecimalEditor).call(this, 'Amount');
 		},
 		get_paymentType: function() {
-			return this.byId(Serenity.StringEditor).call(this, 'PaymentType');
+			return this.byId(Serenity.EnumEditor).call(this, 'PaymentType');
 		},
 		get_documentNo: function() {
 			return this.byId(Serenity.StringEditor).call(this, 'DocumentNo');
@@ -4248,6 +4254,7 @@
 		}
 	}, Serenity.PrefixedContext);
 	ss.initClass($StudentIN_StudentMain_PaymentInstallmentGrid, $asm, {}, ss.makeGenericType(Serenity.EntityGrid$1, [Object]), [Serenity.IDataGrid]);
+	ss.initEnum($StudentIN_StudentMain_PaymentTypes, $asm, { Cash: 0, Indenture: 1, CreditCard: 2, BankTransfer: 3 });
 	ss.initClass($StudentIN_StudentMain_StudentDialog, $asm, {
 		loadEntity: function(entity) {
 			ss.makeGenericType(Serenity.EntityDialog$2, [Object, Object]).prototype.loadEntity.call(this, entity);
@@ -4709,6 +4716,7 @@
 	ss.setMetadata($StudentIN_StudentMain_PaymentGrid, { attr: [new Serenity.ColumnsKeyAttribute('StudentMain.Payment'), new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('Description'), new Serenity.DialogTypeAttribute($StudentIN_StudentMain_PaymentDialog), new Serenity.LocalTextPrefixAttribute('StudentMain.Payment'), new Serenity.ServiceAttribute('StudentMain/Payment')] });
 	ss.setMetadata($StudentIN_StudentMain_PaymentInstallmentDialog, { attr: [new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('Description'), new Serenity.FormKeyAttribute('StudentMain.PaymentInstallment'), new Serenity.LocalTextPrefixAttribute('StudentMain.PaymentInstallment'), new Serenity.ServiceAttribute('StudentMain/PaymentInstallment')] });
 	ss.setMetadata($StudentIN_StudentMain_PaymentInstallmentGrid, { attr: [new Serenity.ColumnsKeyAttribute('StudentMain.PaymentInstallment'), new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('Description'), new Serenity.DialogTypeAttribute($StudentIN_StudentMain_PaymentInstallmentDialog), new Serenity.LocalTextPrefixAttribute('StudentMain.PaymentInstallment'), new Serenity.ServiceAttribute('StudentMain/PaymentInstallment')] });
+	ss.setMetadata($StudentIN_StudentMain_PaymentTypes, { attr: [new Serenity.EnumKeyAttribute('StudentMain.PaymentTypes')] });
 	ss.setMetadata($StudentIN_StudentMain_StudentDialog, { attr: [new Serenity.IdPropertyAttribute('Id'), new Serenity.NamePropertyAttribute('Name'), new Serenity.FlexifyAttribute(), new Serenity.MaximizableAttribute(), new Serenity.FormKeyAttribute('StudentMain.Student'), new Serenity.LocalTextPrefixAttribute('StudentMain.Student'), new Serenity.ServiceAttribute('StudentMain/Student')] });
 	ss.setMetadata($StudentIN_StudentMain_StudentDiscountDialog, { attr: [new Serenity.IdPropertyAttribute('Id'), new Serenity.FormKeyAttribute('StudentMain.StudentDiscount'), new Serenity.LocalTextPrefixAttribute('StudentMain.StudentDiscount'), new Serenity.ServiceAttribute('StudentMain/StudentDiscount')] });
 	ss.setMetadata($StudentIN_StudentMain_StudentDiscountGrid, { attr: [new Serenity.ColumnsKeyAttribute('StudentMain.StudentDiscount'), new Serenity.IdPropertyAttribute('Id'), new Serenity.DialogTypeAttribute($StudentIN_StudentMain_StudentDiscountDialog), new Serenity.LocalTextPrefixAttribute('StudentMain.StudentDiscount'), new Serenity.ServiceAttribute('StudentMain/StudentDiscount')] });

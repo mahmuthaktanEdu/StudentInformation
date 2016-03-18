@@ -7934,6 +7934,166 @@ section.content > .s-DataGrid {
 .s-StudentMain-StudentDialog .s-PropertyGrid .categories {
   height: 660px;
 }
+.s-StudentMain-PaymentDialog > .size {
+  min-width: 650px;
+  width: 650px;
+  min-height: 560px;
+  height: 560px;
+}
+.s-StudentMain-PaymentDialog .tab-pane {
+  height: auto;
+}
+.s-StudentMain-PaymentDialog .caption {
+  width: 150px;
+}
+.s-StudentMain-PaymentDialog .editor {
+  width: 400px;
+}
+.s-StudentMain-PaymentDialog input.editor[type=checkbox] {
+  width: auto;
+}
+.s-StudentMain-PaymentDialog .s-Form .editor.dateQ {
+  width: 376px;
+}
+.s-StudentMain-PaymentDialog .s-Form .editor.emailuser {
+  width: 170px;
+}
+.s-StudentMain-PaymentDialog .s-Form .editor.dateQ.s-DateTimeEditor {
+  width: 281px;
+}
+.s-StudentMain-PaymentDialog .s-Form .editor.s-DateTimeEditor.time {
+  width: 64px;
+  margin-left: 4px;
+}
+.s-StudentMain-PaymentDialog .s-Form .editor.has-inplace-button {
+  width: 374px;
+}
+.s-StudentMain-PaymentDialog .s-Form .emaildomain {
+  width: 215px;
+}
+.s-StudentMain-PaymentDialog .s-PropertyGrid .categories {
+  height: 400px;
+}
+.s-StudentMain-PaymentInstallmentDialog > .size {
+  min-width: 650px;
+  width: 650px;
+  min-height: 600px;
+  height: 600px;
+}
+.s-StudentMain-PaymentInstallmentDialog .tab-pane {
+  height: auto;
+}
+.s-StudentMain-PaymentInstallmentDialog .caption {
+  width: 150px;
+}
+.s-StudentMain-PaymentInstallmentDialog .editor {
+  width: 400px;
+}
+.s-StudentMain-PaymentInstallmentDialog input.editor[type=checkbox] {
+  width: auto;
+}
+.s-StudentMain-PaymentInstallmentDialog .s-Form .editor.dateQ {
+  width: 376px;
+}
+.s-StudentMain-PaymentInstallmentDialog .s-Form .editor.emailuser {
+  width: 170px;
+}
+.s-StudentMain-PaymentInstallmentDialog .s-Form .editor.dateQ.s-DateTimeEditor {
+  width: 281px;
+}
+.s-StudentMain-PaymentInstallmentDialog .s-Form .editor.s-DateTimeEditor.time {
+  width: 64px;
+  margin-left: 4px;
+}
+.s-StudentMain-PaymentInstallmentDialog .s-Form .editor.has-inplace-button {
+  width: 374px;
+}
+.s-StudentMain-PaymentInstallmentDialog .s-Form .emaildomain {
+  width: 215px;
+}
+.s-StudentMain-PaymentInstallmentDialog .s-PropertyGrid .categories {
+  height: 450px;
+}
+.s-StudentMain-InvoiceInformationDialog > .size {
+  min-width: 650px;
+  width: 650px;
+  min-height: 560px;
+  height: 560px;
+}
+.s-StudentMain-InvoiceInformationDialog .tab-pane {
+  height: auto;
+}
+.s-StudentMain-InvoiceInformationDialog .caption {
+  width: 150px;
+}
+.s-StudentMain-InvoiceInformationDialog .editor {
+  width: 400px;
+}
+.s-StudentMain-InvoiceInformationDialog input.editor[type=checkbox] {
+  width: auto;
+}
+.s-StudentMain-InvoiceInformationDialog .s-Form .editor.dateQ {
+  width: 376px;
+}
+.s-StudentMain-InvoiceInformationDialog .s-Form .editor.emailuser {
+  width: 170px;
+}
+.s-StudentMain-InvoiceInformationDialog .s-Form .editor.dateQ.s-DateTimeEditor {
+  width: 281px;
+}
+.s-StudentMain-InvoiceInformationDialog .s-Form .editor.s-DateTimeEditor.time {
+  width: 64px;
+  margin-left: 4px;
+}
+.s-StudentMain-InvoiceInformationDialog .s-Form .editor.has-inplace-button {
+  width: 374px;
+}
+.s-StudentMain-InvoiceInformationDialog .s-Form .emaildomain {
+  width: 215px;
+}
+.s-StudentMain-InvoiceInformationDialog .s-PropertyGrid .categories {
+  height: 400px;
+}
+.s-StudentMain-StudentDiscountDialog > .size {
+  min-width: 650px;
+  width: 650px;
+  min-height: 560px;
+  height: 560px;
+}
+.s-StudentMain-StudentDiscountDialog .tab-pane {
+  height: auto;
+}
+.s-StudentMain-StudentDiscountDialog .caption {
+  width: 150px;
+}
+.s-StudentMain-StudentDiscountDialog .editor {
+  width: 400px;
+}
+.s-StudentMain-StudentDiscountDialog input.editor[type=checkbox] {
+  width: auto;
+}
+.s-StudentMain-StudentDiscountDialog .s-Form .editor.dateQ {
+  width: 376px;
+}
+.s-StudentMain-StudentDiscountDialog .s-Form .editor.emailuser {
+  width: 170px;
+}
+.s-StudentMain-StudentDiscountDialog .s-Form .editor.dateQ.s-DateTimeEditor {
+  width: 281px;
+}
+.s-StudentMain-StudentDiscountDialog .s-Form .editor.s-DateTimeEditor.time {
+  width: 64px;
+  margin-left: 4px;
+}
+.s-StudentMain-StudentDiscountDialog .s-Form .editor.has-inplace-button {
+  width: 374px;
+}
+.s-StudentMain-StudentDiscountDialog .s-Form .emaildomain {
+  width: 215px;
+}
+.s-StudentMain-StudentDiscountDialog .s-PropertyGrid .categories {
+  height: 400px;
+}
 /* ------------------------------------------------------------------------- */
 /* APPENDED BY CODE GENERATOR, MOVE TO CORRECT PLACE AND REMOVE THIS COMMENT */
 /* ------------------------------------------------------------------------- */
@@ -8470,164 +8630,3 @@ section.content > .s-DataGrid {
 /* ------------------------------------------------------------------------- */
 /* APPENDED BY CODE GENERATOR, MOVE TO CORRECT PLACE AND REMOVE THIS COMMENT */
 /* ------------------------------------------------------------------------- */
-.s-StudentMain-PaymentDialog > .size {
-  min-width: 650px;
-  width: 650px;
-}
-.s-StudentMain-PaymentDialog .tab-pane {
-  height: auto;
-}
-.s-StudentMain-PaymentDialog .caption {
-  width: 150px;
-}
-.s-StudentMain-PaymentDialog .editor {
-  width: 400px;
-}
-.s-StudentMain-PaymentDialog input.editor[type=checkbox] {
-  width: auto;
-}
-.s-StudentMain-PaymentDialog .s-Form .editor.dateQ {
-  width: 376px;
-}
-.s-StudentMain-PaymentDialog .s-Form .editor.emailuser {
-  width: 170px;
-}
-.s-StudentMain-PaymentDialog .s-Form .editor.dateQ.s-DateTimeEditor {
-  width: 281px;
-}
-.s-StudentMain-PaymentDialog .s-Form .editor.s-DateTimeEditor.time {
-  width: 64px;
-  margin-left: 4px;
-}
-.s-StudentMain-PaymentDialog .s-Form .editor.has-inplace-button {
-  width: 374px;
-}
-.s-StudentMain-PaymentDialog .s-Form .emaildomain {
-  width: 215px;
-}
-.s-StudentMain-PaymentDialog .s-PropertyGrid .categories {
-  height: 260px;
-}
-/* ------------------------------------------------------------------------- */
-/* APPENDED BY CODE GENERATOR, MOVE TO CORRECT PLACE AND REMOVE THIS COMMENT */
-/* ------------------------------------------------------------------------- */
-.s-StudentMain-PaymentInstallmentDialog > .size {
-  min-width: 650px;
-  width: 650px;
-}
-.s-StudentMain-PaymentInstallmentDialog .tab-pane {
-  height: auto;
-}
-.s-StudentMain-PaymentInstallmentDialog .caption {
-  width: 150px;
-}
-.s-StudentMain-PaymentInstallmentDialog .editor {
-  width: 400px;
-}
-.s-StudentMain-PaymentInstallmentDialog input.editor[type=checkbox] {
-  width: auto;
-}
-.s-StudentMain-PaymentInstallmentDialog .s-Form .editor.dateQ {
-  width: 376px;
-}
-.s-StudentMain-PaymentInstallmentDialog .s-Form .editor.emailuser {
-  width: 170px;
-}
-.s-StudentMain-PaymentInstallmentDialog .s-Form .editor.dateQ.s-DateTimeEditor {
-  width: 281px;
-}
-.s-StudentMain-PaymentInstallmentDialog .s-Form .editor.s-DateTimeEditor.time {
-  width: 64px;
-  margin-left: 4px;
-}
-.s-StudentMain-PaymentInstallmentDialog .s-Form .editor.has-inplace-button {
-  width: 374px;
-}
-.s-StudentMain-PaymentInstallmentDialog .s-Form .emaildomain {
-  width: 215px;
-}
-.s-StudentMain-PaymentInstallmentDialog .s-PropertyGrid .categories {
-  height: 260px;
-}
-/* ------------------------------------------------------------------------- */
-/* APPENDED BY CODE GENERATOR, MOVE TO CORRECT PLACE AND REMOVE THIS COMMENT */
-/* ------------------------------------------------------------------------- */
-.s-StudentMain-InvoiceInformationDialog > .size {
-  min-width: 650px;
-  width: 650px;
-}
-.s-StudentMain-InvoiceInformationDialog .tab-pane {
-  height: auto;
-}
-.s-StudentMain-InvoiceInformationDialog .caption {
-  width: 150px;
-}
-.s-StudentMain-InvoiceInformationDialog .editor {
-  width: 400px;
-}
-.s-StudentMain-InvoiceInformationDialog input.editor[type=checkbox] {
-  width: auto;
-}
-.s-StudentMain-InvoiceInformationDialog .s-Form .editor.dateQ {
-  width: 376px;
-}
-.s-StudentMain-InvoiceInformationDialog .s-Form .editor.emailuser {
-  width: 170px;
-}
-.s-StudentMain-InvoiceInformationDialog .s-Form .editor.dateQ.s-DateTimeEditor {
-  width: 281px;
-}
-.s-StudentMain-InvoiceInformationDialog .s-Form .editor.s-DateTimeEditor.time {
-  width: 64px;
-  margin-left: 4px;
-}
-.s-StudentMain-InvoiceInformationDialog .s-Form .editor.has-inplace-button {
-  width: 374px;
-}
-.s-StudentMain-InvoiceInformationDialog .s-Form .emaildomain {
-  width: 215px;
-}
-.s-StudentMain-InvoiceInformationDialog .s-PropertyGrid .categories {
-  height: 260px;
-}
-/* ------------------------------------------------------------------------- */
-/* APPENDED BY CODE GENERATOR, MOVE TO CORRECT PLACE AND REMOVE THIS COMMENT */
-/* ------------------------------------------------------------------------- */
-.s-StudentMain-StudentDiscountDialog > .size {
-  min-width: 650px;
-  width: 650px;
-}
-.s-StudentMain-StudentDiscountDialog .tab-pane {
-  height: auto;
-}
-.s-StudentMain-StudentDiscountDialog .caption {
-  width: 150px;
-}
-.s-StudentMain-StudentDiscountDialog .editor {
-  width: 400px;
-}
-.s-StudentMain-StudentDiscountDialog input.editor[type=checkbox] {
-  width: auto;
-}
-.s-StudentMain-StudentDiscountDialog .s-Form .editor.dateQ {
-  width: 376px;
-}
-.s-StudentMain-StudentDiscountDialog .s-Form .editor.emailuser {
-  width: 170px;
-}
-.s-StudentMain-StudentDiscountDialog .s-Form .editor.dateQ.s-DateTimeEditor {
-  width: 281px;
-}
-.s-StudentMain-StudentDiscountDialog .s-Form .editor.s-DateTimeEditor.time {
-  width: 64px;
-  margin-left: 4px;
-}
-.s-StudentMain-StudentDiscountDialog .s-Form .editor.has-inplace-button {
-  width: 374px;
-}
-.s-StudentMain-StudentDiscountDialog .s-Form .emaildomain {
-  width: 215px;
-}
-.s-StudentMain-StudentDiscountDialog .s-PropertyGrid .categories {
-  height: 260px;
-}
