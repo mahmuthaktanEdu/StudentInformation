@@ -9,6 +9,7 @@ namespace StudentIN.StudentMain.Forms
     using System.Collections.Generic;
     using System.IO;
     using GeneralDefinitions;
+    using Entities;
     [FormScript("StudentMain.Student")]
     [BasedOnRow(typeof(Entities.StudentRow))]
     public class StudentForm
@@ -18,7 +19,7 @@ namespace StudentIN.StudentMain.Forms
         public Int32 No { get; set; }
         public String Name { get; set; }
         public String Surname { get; set; }
-        public String Gender { get; set; }
+        public Genders Gender { get; set; }
         public DateTime PreEnrollmentDate { get; set; }
         public DateTime EnrollmentDate { get; set; }
         public String IdentityNumber { get; set; }
@@ -33,14 +34,27 @@ namespace StudentIN.StudentMain.Forms
         public Int32 SchoolId { get; set; }
         [ConsultantEditor]
         public Int32 ConsultantIId { get; set; }
-        public String PostalCode { get; set; }
-        public String Phone { get; set; }
+        [Category("Kayıt Bilgileri")]
+        public Boolean IsRecorded { get; set; }
+        public DateTime RecordCancelDate { get; set; }
+        [RecordStateEditor]
+        public Int32 RecordStateId { get; set; }
+        [PaymentTypeEditor]
+        public Int32 PaymentTypeId { get; set; }
+
+        [Category("İletişim Bilgileri")]
+
         public String MobilePhone { get; set; }
+        public String Phone { get; set; }
         public String EMail { get; set; }
         public String Address { get; set; }
+        public String PostalCode { get; set; }
+        [CityEditor]
         public Int32 CityId { get; set; }
+        [Category("Veli Bilgileri")]
         public String ParentName { get; set; }
         public String ParentSurname { get; set; }
+        [OccupationEditor]
         public Int32 ParentOccupationId { get; set; }
         [RelativeEditor]
         public Int32 RelativeId { get; set; }
@@ -48,23 +62,15 @@ namespace StudentIN.StudentMain.Forms
         public String ParentPhone { get; set; }
         public String ParentHomeAddress { get; set; }
         public String ParentPostalCode { get; set; }
+        [CityEditor]
         public Int32 ParentCityId { get; set; }
         public String ParentWorkPhone { get; set; }
         public String ParentWorkAddress { get; set; }
         public String ParentWorkPostalCode { get; set; }
+        [CityEditor]
         public Int32 ParentWorkCityId { get; set; }
         public String ParentIdentityNumber { get; set; }
-        public Boolean IsRecorded { get; set; }
-        public DateTime RecordCancelDate { get; set; }
-        [RecordStateEditor]
-        public Int32 RecordStateId { get; set; }
-        [PaymentTypeEditor]
-        public Int32 PaymentTypeId { get; set; }
         public Int32 DiscountUserId { get; set; }
-        public String DiscountDescription { get; set; }
-        public Int32 CreatedBy  { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public Int32 LastModifiedBy { get; set; }
-        public DateTime LastModifiedDate { get; set; }
+        public String DiscountDescription { get; set; } 
     }
 }

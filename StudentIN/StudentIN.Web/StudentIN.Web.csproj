@@ -1630,6 +1630,7 @@
     <Compile Include="Modules\Northwind\Territory\TerritoryColumns.cs" />
     <Content Include="Modules\StudentMain\Student\StudentDialog.Template.html" />
     <Compile Include="Modules\StudentMain\Payment\PaymentTypes.cs" />
+    <Compile Include="Modules\StudentMain\Student\Gender.cs" />
     <Compile Include="Modules\Texts.cs" />
     <Compile Include="Modules\Membership\Account\AccountPage.cs" />
     <Compile Include="Modules\Administration\User\Authentication\AuthorizationService.cs" />

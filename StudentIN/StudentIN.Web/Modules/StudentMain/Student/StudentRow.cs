@@ -14,7 +14,7 @@ namespace StudentIN.StudentMain.Entities
     [ReadPermission("Administration")]
     [ModifyPermission("Administration")]
     [LookupScript("StudentIN.Student")]
-    public sealed class StudentRow :  Row, IIdRow, INameRow
+    public sealed class StudentRow : LoggingRow, IIdRow, INameRow, IIsActiveDeletedRow, IDeleteLogRow
     {
         [DisplayName("Id"), Column("ID"), Identity]
         public Int32? Id
@@ -23,14 +23,14 @@ namespace StudentIN.StudentMain.Entities
             set { Fields.Id[this] = value; }
         }
 
-        [DisplayName("Department"), NotNull, ForeignKey("[dbo].[Department]", "ID"), LeftJoin("jDepartment"), TextualField("DepartmentName")]
+        [DisplayName("Department"), NotNull, ForeignKey("[dbo].[Department]", "ID"), LeftJoin("jDepartment"), TextualField("DepartmentName"),Width(80)]
         public Int32? DepartmentId
         {
             get { return Fields.DepartmentId[this]; }
             set { Fields.DepartmentId[this] = value; }
         }
 
-        [DisplayName("No"), NotNull]
+        [DisplayName("No"), NotNull,Width(80), EditLink, QuickSearch]
         public Int32? No
         {
             get { return Fields.No[this]; }
@@ -44,7 +44,7 @@ namespace StudentIN.StudentMain.Entities
             set { Fields.Name[this] = value; }
         }
 
-        [DisplayName("Surname"), Size(50)]
+        [DisplayName("Surname"), Size(50),QuickSearch]
         public String Surname
         {
             get { return Fields.Surname[this]; }
@@ -58,11 +58,11 @@ namespace StudentIN.StudentMain.Entities
             set { Fields.Fullname[this] = value; }
         }
 
-        [DisplayName("Gender"), Size(8)]
-        public String Gender
+        [DisplayName("Gender")]
+        public Genders Gender
         {
-            get { return Fields.Gender[this]; }
-            set { Fields.Gender[this] = value; }
+            get { return (Genders)Fields.Gender[this]; }
+            set { Fields.Gender[this] = (Int32)value; }
         }
 
         [DisplayName("Pre Enrollment Date")]
@@ -79,7 +79,7 @@ namespace StudentIN.StudentMain.Entities
             set { Fields.EnrollmentDate[this] = value; }
         }
 
-        [DisplayName("Identity Number"), Size(15)]
+        [DisplayName("Identity Number"), Size(15), QuickSearch]
         public String IdentityNumber
         {
             get { return Fields.IdentityNumber[this]; }
@@ -128,7 +128,7 @@ namespace StudentIN.StudentMain.Entities
             set { Fields.SchoolId[this] = value; }
         }
 
-        [DisplayName("Consultant I"), ForeignKey("[dbo].[Consultant]", "ID"), LeftJoin("jConsultantI"), TextualField("ConsultantIName")]
+        [DisplayName("Consultant"), ForeignKey("[dbo].[Consultant]", "ID"), LeftJoin("jConsultantI"), TextualField("ConsultantIName")]
         public Int32? ConsultantIId
         {
             get { return Fields.ConsultantIId[this]; }
@@ -315,35 +315,7 @@ namespace StudentIN.StudentMain.Entities
         {
             get { return Fields.DiscountDescription[this]; }
             set { Fields.DiscountDescription[this] = value; }
-        }
-
-        [DisplayName("Created By"), Size(20)]
-        public Int32? CreatedBy
-        {
-            get { return Fields.CreatedBy[this]; }
-            set { Fields.CreatedBy[this] = value; }
-        }
-
-        [DisplayName("Created Date")]
-        public DateTime? CreatedDate
-        {
-            get { return Fields.CreatedDate[this]; }
-            set { Fields.CreatedDate[this] = value; }
-        }
-
-        [DisplayName("Last Modified By"), Size(20)]
-        public Int32? LastModifiedBy
-        {
-            get { return Fields.LastModifiedBy[this]; }
-            set { Fields.LastModifiedBy[this] = value; }
-        }
-
-        [DisplayName("Last Modified Date")]
-        public DateTime? LastModifiedDate
-        {
-            get { return Fields.LastModifiedDate[this]; }
-            set { Fields.LastModifiedDate[this] = value; }
-        }
+        } 
 
         [DisplayName("Department Code"), Expression("jDepartment.[Code]")]
         public Int32? DepartmentCode
@@ -443,21 +415,21 @@ namespace StudentIN.StudentMain.Entities
             set { Fields.ConsultantIDepartmentId[this] = value; }
         }
 
-        [DisplayName("Consultant I Name"), Expression("jConsultantI.[Name]"), Size(8) ]
+        [DisplayName("Consultant Name"), Expression("jConsultantI.[Name]"), Size(8) ]
         public String ConsultantIName
         {
             get { return Fields.ConsultantIName[this]; }
             set { Fields.ConsultantIName[this] = value; }
         }
 
-        [DisplayName("Parent Occupation Name"), Expression("jParentOccupation.[Name]")]
+        [DisplayName("Parent Occupation"), Expression("jParentOccupation.[Name]")]
         public String ParentOccupationName
         {
             get { return Fields.ParentOccupationName[this]; }
             set { Fields.ParentOccupationName[this] = value; }
         }
 
-        [DisplayName("Relative Name"), Expression("jRelative.[Name]")]
+        [DisplayName("Parent Relation"), Expression("jRelative.[Name]")]
         public String RelativeName
         {
             get { return Fields.RelativeName[this]; }
@@ -478,21 +450,21 @@ namespace StudentIN.StudentMain.Entities
             set { Fields.ParentWorkCityName[this] = value; }
         }
 
-        [DisplayName("Record State Name"), Expression("jRecordState.[Name]"),Size(8)]
+        [DisplayName("Record State"), Expression("jRecordState.[Name]"),Size(8)]
         public String RecordStateName
         {
             get { return Fields.RecordStateName[this]; }
             set { Fields.RecordStateName[this] = value; }
         }
 
-        [DisplayName("Payment Type Name"), Expression("jPaymentType.[Name]"), Size(8)]
+        [DisplayName("Payment Type"), Expression("jPaymentType.[Name]"), Size(8)]
         public String PaymentTypeName
         {
             get { return Fields.PaymentTypeName[this]; }
             set { Fields.PaymentTypeName[this] = value; }
         }
 
-        [DisplayName("Payment Type Payment Amount"), Expression("jPaymentType.[PaymentAmount]")]
+        [DisplayName("Payment Type Amount"), Expression("jPaymentType.[PaymentAmount]")]
         public Decimal? PaymentTypePaymentAmount
         {
             get { return Fields.PaymentTypePaymentAmount[this]; }
@@ -516,7 +488,7 @@ namespace StudentIN.StudentMain.Entities
         {
         }
 
-        public class RowFields : RowFieldsBase
+        public class RowFields : LoggingRowFields
         {
             public Int32Field Id;
             public Int32Field DepartmentId;
@@ -524,7 +496,7 @@ namespace StudentIN.StudentMain.Entities
             public StringField Name;
             public StringField Surname;
             public StringField Fullname;
-            public StringField Gender;
+            public Int32Field Gender;
             public DateTimeField PreEnrollmentDate;
             public DateTimeField EnrollmentDate;
             public StringField IdentityNumber;
@@ -560,12 +532,7 @@ namespace StudentIN.StudentMain.Entities
             public Int32Field RecordStateId;
             public Int32Field PaymentTypeId;
             public Int32Field DiscountUserId;
-            public StringField DiscountDescription;
-            public Int32Field CreatedBy;
-            public DateTimeField CreatedDate;
-            public Int32Field LastModifiedBy;
-            public DateTimeField LastModifiedDate;
-
+            public StringField DiscountDescription; 
             public Int32Field DepartmentCode;
             public StringField DepartmentName;
             public Int32Field DepartmentCityId;

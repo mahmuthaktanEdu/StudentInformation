@@ -13,7 +13,8 @@ namespace StudentIN.StudentMain
     public partial class StudentRow
     {
         [InlineConstant] public const string IdProperty = "Id";
-        [InlineConstant] public const string NameProperty = "Name";
+        [InlineConstant] public const string IsActiveProperty = "IsActive";
+        [InlineConstant] public const string NameProperty = "Fullname";
         [InlineConstant] public const string LocalTextPrefix = "StudentMain.Student";
         [InlineConstant] public const string LookupKey = "StudentIN.Student";
     
@@ -24,7 +25,8 @@ namespace StudentIN.StudentMain
         public Int32? No { get; set; }
         public String Name { get; set; }
         public String Surname { get; set; }
-        public String Gender { get; set; }
+        public String Fullname { get; set; }
+        public Genders? Gender { get; set; }
         public String PreEnrollmentDate { get; set; }
         public String EnrollmentDate { get; set; }
         public String IdentityNumber { get; set; }
@@ -61,10 +63,6 @@ namespace StudentIN.StudentMain
         public Int32? PaymentTypeId { get; set; }
         public Int32? DiscountUserId { get; set; }
         public String DiscountDescription { get; set; }
-        public Int32? CreatedBy { get; set; }
-        public String CreatedDate { get; set; }
-        public Int32? LastModifiedBy { get; set; }
-        public String LastModifiedDate { get; set; }
         public Int32? DepartmentCode { get; set; }
         public String DepartmentName { get; set; }
         public Int32? DepartmentCityId { get; set; }
@@ -87,6 +85,13 @@ namespace StudentIN.StudentMain
         public String RecordStateName { get; set; }
         public String PaymentTypeName { get; set; }
         public Decimal? PaymentTypePaymentAmount { get; set; }
+        public Int32? InsertUserId { get; set; }
+        public String InsertDate { get; set; }
+        public Int32? UpdateUserId { get; set; }
+        public String UpdateDate { get; set; }
+        public Int32? DeleteUserId { get; set; }
+        public String DeleteDate { get; set; }
+        public Int16? IsActive { get; set; }
     
         [Imported, PreserveMemberCase]
         public static class Fields
@@ -96,6 +101,7 @@ namespace StudentIN.StudentMain
             [InlineConstant] public const string No = "No";
             [InlineConstant] public const string Name = "Name";
             [InlineConstant] public const string Surname = "Surname";
+            [InlineConstant] public const string Fullname = "Fullname";
             [InlineConstant] public const string Gender = "Gender";
             [InlineConstant] public const string PreEnrollmentDate = "PreEnrollmentDate";
             [InlineConstant] public const string EnrollmentDate = "EnrollmentDate";
@@ -133,10 +139,6 @@ namespace StudentIN.StudentMain
             [InlineConstant] public const string PaymentTypeId = "PaymentTypeId";
             [InlineConstant] public const string DiscountUserId = "DiscountUserId";
             [InlineConstant] public const string DiscountDescription = "DiscountDescription";
-            [InlineConstant] public const string CreatedBy = "CreatedBy";
-            [InlineConstant] public const string CreatedDate = "CreatedDate";
-            [InlineConstant] public const string LastModifiedBy = "LastModifiedBy";
-            [InlineConstant] public const string LastModifiedDate = "LastModifiedDate";
             [InlineConstant] public const string DepartmentCode = "DepartmentCode";
             [InlineConstant] public const string DepartmentName = "DepartmentName";
             [InlineConstant] public const string DepartmentCityId = "DepartmentCityId";
@@ -159,6 +161,13 @@ namespace StudentIN.StudentMain
             [InlineConstant] public const string RecordStateName = "RecordStateName";
             [InlineConstant] public const string PaymentTypeName = "PaymentTypeName";
             [InlineConstant] public const string PaymentTypePaymentAmount = "PaymentTypePaymentAmount";
+            [InlineConstant] public const string InsertUserId = "InsertUserId";
+            [InlineConstant] public const string InsertDate = "InsertDate";
+            [InlineConstant] public const string UpdateUserId = "UpdateUserId";
+            [InlineConstant] public const string UpdateDate = "UpdateDate";
+            [InlineConstant] public const string DeleteUserId = "DeleteUserId";
+            [InlineConstant] public const string DeleteDate = "DeleteDate";
+            [InlineConstant] public const string IsActive = "IsActive";
         }
     }
     

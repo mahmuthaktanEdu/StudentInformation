@@ -19,7 +19,7 @@ namespace StudentIN.StudentMain
         public IntegerEditor No { get { return ById<IntegerEditor>("No"); } }
         public StringEditor Name { get { return ById<StringEditor>("Name"); } }
         public StringEditor Surname { get { return ById<StringEditor>("Surname"); } }
-        public StringEditor Gender { get { return ById<StringEditor>("Gender"); } }
+        public EnumEditor Gender { get { return ById<EnumEditor>("Gender"); } }
         public DateEditor PreEnrollmentDate { get { return ById<DateEditor>("PreEnrollmentDate"); } }
         public DateEditor EnrollmentDate { get { return ById<DateEditor>("EnrollmentDate"); } }
         public StringEditor IdentityNumber { get { return ById<StringEditor>("IdentityNumber"); } }
@@ -30,36 +30,32 @@ namespace StudentIN.StudentMain
         public GeneralDefinitions.ClassEditor ClassId { get { return ById<GeneralDefinitions.ClassEditor>("ClassId"); } }
         public GeneralDefinitions.SchoolEditor SchoolId { get { return ById<GeneralDefinitions.SchoolEditor>("SchoolId"); } }
         public GeneralDefinitions.ConsultantEditor ConsultantIId { get { return ById<GeneralDefinitions.ConsultantEditor>("ConsultantIId"); } }
-        public StringEditor PostalCode { get { return ById<StringEditor>("PostalCode"); } }
-        public StringEditor Phone { get { return ById<StringEditor>("Phone"); } }
+        public BooleanEditor IsRecorded { get { return ById<BooleanEditor>("IsRecorded"); } }
+        public DateEditor RecordCancelDate { get { return ById<DateEditor>("RecordCancelDate"); } }
+        public GeneralDefinitions.RecordStateEditor RecordStateId { get { return ById<GeneralDefinitions.RecordStateEditor>("RecordStateId"); } }
+        public GeneralDefinitions.PaymentTypeEditor PaymentTypeId { get { return ById<GeneralDefinitions.PaymentTypeEditor>("PaymentTypeId"); } }
         public StringEditor MobilePhone { get { return ById<StringEditor>("MobilePhone"); } }
+        public StringEditor Phone { get { return ById<StringEditor>("Phone"); } }
         public StringEditor EMail { get { return ById<StringEditor>("EMail"); } }
         public StringEditor Address { get { return ById<StringEditor>("Address"); } }
-        public IntegerEditor CityId { get { return ById<IntegerEditor>("CityId"); } }
+        public StringEditor PostalCode { get { return ById<StringEditor>("PostalCode"); } }
+        public GeneralDefinitions.CityEditor CityId { get { return ById<GeneralDefinitions.CityEditor>("CityId"); } }
         public StringEditor ParentName { get { return ById<StringEditor>("ParentName"); } }
         public StringEditor ParentSurname { get { return ById<StringEditor>("ParentSurname"); } }
-        public IntegerEditor ParentOccupationId { get { return ById<IntegerEditor>("ParentOccupationId"); } }
+        public GeneralDefinitions.OccupationEditor ParentOccupationId { get { return ById<GeneralDefinitions.OccupationEditor>("ParentOccupationId"); } }
         public GeneralDefinitions.RelativeEditor RelativeId { get { return ById<GeneralDefinitions.RelativeEditor>("RelativeId"); } }
         public StringEditor ParentMobile { get { return ById<StringEditor>("ParentMobile"); } }
         public StringEditor ParentPhone { get { return ById<StringEditor>("ParentPhone"); } }
         public StringEditor ParentHomeAddress { get { return ById<StringEditor>("ParentHomeAddress"); } }
         public StringEditor ParentPostalCode { get { return ById<StringEditor>("ParentPostalCode"); } }
-        public IntegerEditor ParentCityId { get { return ById<IntegerEditor>("ParentCityId"); } }
+        public GeneralDefinitions.CityEditor ParentCityId { get { return ById<GeneralDefinitions.CityEditor>("ParentCityId"); } }
         public StringEditor ParentWorkPhone { get { return ById<StringEditor>("ParentWorkPhone"); } }
         public StringEditor ParentWorkAddress { get { return ById<StringEditor>("ParentWorkAddress"); } }
         public StringEditor ParentWorkPostalCode { get { return ById<StringEditor>("ParentWorkPostalCode"); } }
-        public IntegerEditor ParentWorkCityId { get { return ById<IntegerEditor>("ParentWorkCityId"); } }
+        public GeneralDefinitions.CityEditor ParentWorkCityId { get { return ById<GeneralDefinitions.CityEditor>("ParentWorkCityId"); } }
         public StringEditor ParentIdentityNumber { get { return ById<StringEditor>("ParentIdentityNumber"); } }
-        public BooleanEditor IsRecorded { get { return ById<BooleanEditor>("IsRecorded"); } }
-        public DateEditor RecordCancelDate { get { return ById<DateEditor>("RecordCancelDate"); } }
-        public GeneralDefinitions.RecordStateEditor RecordStateId { get { return ById<GeneralDefinitions.RecordStateEditor>("RecordStateId"); } }
-        public GeneralDefinitions.PaymentTypeEditor PaymentTypeId { get { return ById<GeneralDefinitions.PaymentTypeEditor>("PaymentTypeId"); } }
         public IntegerEditor DiscountUserId { get { return ById<IntegerEditor>("DiscountUserId"); } }
         public StringEditor DiscountDescription { get { return ById<StringEditor>("DiscountDescription"); } }
-        public IntegerEditor CreatedBy { get { return ById<IntegerEditor>("CreatedBy"); } }
-        public DateEditor CreatedDate { get { return ById<DateEditor>("CreatedDate"); } }
-        public IntegerEditor LastModifiedBy { get { return ById<IntegerEditor>("LastModifiedBy"); } }
-        public DateEditor LastModifiedDate { get { return ById<DateEditor>("LastModifiedDate"); } }
     }
 }
 

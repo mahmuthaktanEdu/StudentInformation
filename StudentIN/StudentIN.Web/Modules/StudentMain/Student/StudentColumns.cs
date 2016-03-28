@@ -8,7 +8,7 @@ namespace StudentIN.StudentMain.Columns
     using System.ComponentModel;
     using System.Collections.Generic;
     using System.IO;
-
+    using Entities;
     [ColumnsScript("StudentMain.Student")]
     [BasedOnRow(typeof(Entities.StudentRow))]
     public class StudentColumns
@@ -16,12 +16,13 @@ namespace StudentIN.StudentMain.Columns
         [EditLink, DisplayName("Db.Shared.RecordId"), AlignRight]
         public Int32 Id { get; set; }
         [Category("Temel Bilgiler")]
+        [Width(80)]
         public String DepartmentName { get; set; }
         public Int32 No { get; set; }
         [EditLink]
         public String Name { get; set; }
         public String Surname { get; set; }
-        public String Gender { get; set; }
+        public Genders Gender { get; set; }
         public DateTime PreEnrollmentDate { get; set; }
         public DateTime EnrollmentDate { get; set; }
         public String IdentityNumber { get; set; }
@@ -50,11 +51,7 @@ namespace StudentIN.StudentMain.Columns
         public Boolean IsRecorded { get; set; }
         public DateTime RecordCancelDate { get; set; }
         public Int32 DiscountUserId { get; set; }
-        public String DiscountDescription { get; set; }
-        public Int32 CreatedBy  { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public Int32 LastModifiedBy { get; set; }
-        public DateTime LastModifiedDate { get; set; }
+        public String DiscountDescription { get; set; } 
 
         [Category("Veli Bilgileri")]
         public String ParentName { get; set; }
