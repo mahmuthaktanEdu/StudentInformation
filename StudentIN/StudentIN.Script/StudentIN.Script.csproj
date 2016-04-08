@@ -52,6 +52,7 @@
     <Compile Include="GeneralDefinitions\Class\ClassEditor.cs" />
     <Compile Include="GeneralDefinitions\Consultant\ConsultantEditor.cs" />
     <Compile Include="GeneralDefinitions\Department\DepartmentEditor.cs" />
+    <Compile Include="GeneralDefinitions\DiscountType\DiscountTypeEditor.cs" />
     <Compile Include="GeneralDefinitions\Occupation\OccupationEditor.cs" />
     <Compile Include="GeneralDefinitions\PaymentType\PaymentTypeEditor.cs" />
     <Compile Include="GeneralDefinitions\RecordState\RecordStateEditor.cs" />
@@ -475,6 +476,11 @@
     </Compile>
     <Compile Include="StudentMain\StudentDiscount\StudentDiscountGrid.cs" />
     <Compile Include="StudentMain\StudentDiscount\StudentDiscountDialog.cs" />
+    <Compile Include="Imports\FormContexts\GeneralDefinitions.DiscountTypeForm.cs">
+      <DependentUpon>FormContexts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralDefinitions\DiscountType\DiscountTypeGrid.cs" />
+    <Compile Include="GeneralDefinitions\DiscountType\DiscountTypeDialog.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Imports\FormContexts\FormContexts.log">
@@ -612,6 +618,12 @@
       <DependentUpon>ServiceContracts.tt</DependentUpon>
     </Compile>
     <Compile Include="Imports\ServiceContracts\StudentMain.StudentDiscountService.cs">
+      <DependentUpon>ServiceContracts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Imports\ServiceContracts\GeneralDefinitions.DiscountTypeRow.cs">
+      <DependentUpon>ServiceContracts.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Imports\ServiceContracts\GeneralDefinitions.DiscountTypeService.cs">
       <DependentUpon>ServiceContracts.tt</DependentUpon>
     </Compile>
   </ItemGroup>

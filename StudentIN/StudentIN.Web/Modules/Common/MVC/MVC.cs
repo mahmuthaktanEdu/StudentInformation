@@ -131,6 +131,11 @@ namespace MVC
                 public const string DepartmentIndex = "~/Modules/GeneralDefinitions/Department/DepartmentIndex.cshtml";
             }
 
+            public static class DiscountType
+            {
+                public const string DiscountTypeIndex = "~/Modules/GeneralDefinitions/DiscountType/DiscountTypeIndex.cshtml";
+            }
+
             public static class Occupation
             {
                 public const string OccupationIndex = "~/Modules/GeneralDefinitions/Occupation/OccupationIndex.cshtml";

@@ -8630,3 +8630,85 @@ section.content > .s-DataGrid {
 /* ------------------------------------------------------------------------- */
 /* APPENDED BY CODE GENERATOR, MOVE TO CORRECT PLACE AND REMOVE THIS COMMENT */
 /* ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+/* APPENDED BY CODE GENERATOR, MOVE TO CORRECT PLACE AND REMOVE THIS COMMENT */
+/* ------------------------------------------------------------------------- */
+.s-GeneralDefinitions-DiscountTypeDialog > .size {
+  min-width: 650px;
+  width: 650px;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .tab-pane {
+  height: auto;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .caption {
+  width: 150px;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .editor {
+  width: 400px;
+}
+.s-GeneralDefinitions-DiscountTypeDialog input.editor[type=checkbox] {
+  width: auto;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .s-Form .editor.dateQ {
+  width: 376px;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .s-Form .editor.emailuser {
+  width: 170px;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .s-Form .editor.dateQ.s-DateTimeEditor {
+  width: 281px;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .s-Form .editor.s-DateTimeEditor.time {
+  width: 64px;
+  margin-left: 4px;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .s-Form .editor.has-inplace-button {
+  width: 374px;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .s-Form .emaildomain {
+  width: 215px;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .s-PropertyGrid .categories {
+  height: 260px;
+}
+/* ------------------------------------------------------------------------- */
+/* APPENDED BY CODE GENERATOR, MOVE TO CORRECT PLACE AND REMOVE THIS COMMENT */
+/* ------------------------------------------------------------------------- */
+.s-GeneralDefinitions-DiscountTypeDialog > .size {
+  min-width: 650px;
+  width: 650px;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .tab-pane {
+  height: auto;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .caption {
+  width: 150px;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .editor {
+  width: 400px;
+}
+.s-GeneralDefinitions-DiscountTypeDialog input.editor[type=checkbox] {
+  width: auto;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .s-Form .editor.dateQ {
+  width: 376px;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .s-Form .editor.emailuser {
+  width: 170px;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .s-Form .editor.dateQ.s-DateTimeEditor {
+  width: 281px;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .s-Form .editor.s-DateTimeEditor.time {
+  width: 64px;
+  margin-left: 4px;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .s-Form .editor.has-inplace-button {
+  width: 374px;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .s-Form .emaildomain {
+  width: 215px;
+}
+.s-GeneralDefinitions-DiscountTypeDialog .s-PropertyGrid .categories {
+  height: 260px;
+}

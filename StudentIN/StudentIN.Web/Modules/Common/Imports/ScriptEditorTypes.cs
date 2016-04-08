@@ -245,6 +245,46 @@ namespace StudentIN.GeneralDefinitions
         }
     }
 
+    public partial class DiscountTypeEditorAttribute : CustomEditorAttribute
+    {
+        public const string Key = "StudentIN.GeneralDefinitions.DiscountTypeEditor";
+    
+        public DiscountTypeEditorAttribute()
+            : base(Key)
+        {
+        }
+    
+        public String CascadeField
+        {
+            get { return GetOption<String>("cascadeField"); }
+            set { SetOption("cascadeField", value); }
+        }
+    
+        public String CascadeFrom
+        {
+            get { return GetOption<String>("cascadeFrom"); }
+            set { SetOption("cascadeFrom", value); }
+        }
+    
+        public Object CascadeValue
+        {
+            get { return GetOption<Object>("cascadeValue"); }
+            set { SetOption("cascadeValue", value); }
+        }
+    
+        public String FilterField
+        {
+            get { return GetOption<String>("filterField"); }
+            set { SetOption("filterField", value); }
+        }
+    
+        public Object FilterValue
+        {
+            get { return GetOption<Object>("filterValue"); }
+            set { SetOption("filterValue", value); }
+        }
+    }
+
     public partial class OccupationEditorAttribute : CustomEditorAttribute
     {
         public const string Key = "StudentIN.GeneralDefinitions.OccupationEditor";

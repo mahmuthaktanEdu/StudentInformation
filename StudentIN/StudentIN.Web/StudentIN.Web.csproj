@@ -1507,6 +1507,7 @@
     <Content Include="Modules\StudentMain\PaymentInstallment\PaymentInstallmentIndex.cshtml" />
     <Content Include="Modules\StudentMain\InvoiceInformation\InvoiceInformationIndex.cshtml" />
     <Content Include="Modules\StudentMain\StudentDiscount\StudentDiscountIndex.cshtml" />
+    <Content Include="Modules\GeneralDefinitions\DiscountType\DiscountTypeIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -1840,6 +1841,12 @@
     <Compile Include="Modules\StudentMain\StudentDiscount\StudentDiscountRepository.cs" />
     <Compile Include="Modules\StudentMain\StudentDiscount\StudentDiscountEndpoint.cs" />
     <Compile Include="Modules\StudentMain\StudentDiscount\StudentDiscountPage.cs" />
+    <Compile Include="Modules\GeneralDefinitions\DiscountType\DiscountTypeRow.cs" />
+    <Compile Include="Modules\GeneralDefinitions\DiscountType\DiscountTypeColumns.cs" />
+    <Compile Include="Modules\GeneralDefinitions\DiscountType\DiscountTypeForm.cs" />
+    <Compile Include="Modules\GeneralDefinitions\DiscountType\DiscountTypeRepository.cs" />
+    <Compile Include="Modules\GeneralDefinitions\DiscountType\DiscountTypeEndpoint.cs" />
+    <Compile Include="Modules\GeneralDefinitions\DiscountType\DiscountTypePage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1858,7 +1865,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>14191</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
